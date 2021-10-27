@@ -67,8 +67,8 @@ $atLeast['3.0'] = ($atLeast['3.0'] || in_array($ver, $beta3Versions));
 $popup = ' onclick="window.open(this.href); return false;"';
 
 
-$links['client_area'] = '<a href="#"'.$popup.' class="broken">client area (dead link)</a>';
-$links['my_downloads'] = '<a href="#"'.$popup.' class="broken">My Downloads</a>';
+$links['client_area'] = '<a class="broken">client area</a>';
+$links['my_downloads'] = '<a class="broken">My Downloads</a>';
 
 //now figure out if we're going to the "latest" or not...
 $to = $latestVer;
