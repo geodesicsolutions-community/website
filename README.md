@@ -1,2 +1,2 @@
 # website
-Source code for the geodesicsolutions.org website
+Source code for the geodesicsolutions.org website.
