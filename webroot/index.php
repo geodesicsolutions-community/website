@@ -1,13 +1,14 @@
 <?php
 
 // @todo Move this stuff to a bootloader if we get more files
+
 define('DIR_TEMPLATE', dirname(__DIR__) . '/templates');
 
 /**
  * Helper to easily include a template file from the templates folder
  */
 function template(string $name): void {
-    include DIR_TEMPLATE . $name . '.php';
+    include DIR_TEMPLATE . "/$name.php";
 }
 
 ?>
