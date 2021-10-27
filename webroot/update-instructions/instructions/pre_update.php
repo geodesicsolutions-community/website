@@ -10,7 +10,7 @@
             your download access in order to download the update.
             You can see the different
             pricing options for extending your download access
-            <a href="#" class="broken" <?php echo $popup; ?>>here</a>.
+            <a class="broken">here</a>.
             <br /><br />
             <strong>Note:</strong> We mention this in one of the first steps, to make
             sure you are aware of it before getting too far in the instructions.
@@ -33,7 +33,7 @@
 <li>
     <strong>THIS PART IS OUTDATED</strong> - we will update it if/when we are able.
     <br><br>
-    <a href="#"<?=$popup?>>
+    <a class="broken">
     Download the Update Package</a> from the <?php echo $links['client_area'];?>
     on our site.  Remember where you have downloaded the package to on your
     PC. The package to download will be at:
@@ -114,7 +114,7 @@
 
             <li class="new">
                 <a href="/wiki/installation/download_software/start/"<?=$popup?>>
-                Download 2.0.4</a> version from the client area.  The package to download will be in the <a href="#" class="broken"<?=$popup?>>Client Area</a> at:
+                Download 2.0.4</a> version from the client area.  The package to download will be in the <a class="broken">Client Area</a> at:
                 <br /><br />
                 <strong>Browse To:</strong> <em><?=$oldPackageFolder?></em><br /><br />
                 <strong>Download Labeled:</strong> <em>Update to 2.0.4 <?php
