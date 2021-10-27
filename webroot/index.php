@@ -28,6 +28,8 @@ function template(string $name): void {
             <li>
                 Gut the licensing from the encoded files and created a patch for the latest version to work <strong>with no ioncube needed or license checks</strong>.
                 <br><br>
+                <strong>Note:</strong> Provided as-is with no waranty of any kind, <strong>use at your own risk</strong>.
+                <br><br>
                 <strong>Instructions:</strong><br>
                 Download the patch: <button onclick="downloadPatch('/patches/unencoded_unlicense_patch_18.02.0.bff354dbba748dd30c1d9a7d1ccc7dd61a1b95fc.zip')">download patch</button>
                 <br><br>
