@@ -46,6 +46,10 @@ function template(string $name): void {
                     <li>updateFactory.unenc.php -> IGNORE!  Unless you are trying to update to 18.02.0, in which case,
                         upload to /upgrade/ folder then run the upgrade script.</li>
                 </ul>
+                <br><br>
+                <strong>Sharing Note:</strong> Please send people the link to this page instead of passing around the files or hot linking the file directly!
+                I know the site is ugly, still please just link to the site.  I use analytics to figure out the level of usage, if I see very little traffic or clicks
+                on the patch file that will inform my decision of how much additional time to put into this (for free).  <strong>Thanks!</strong>
             </li>
         </ul>
         <br>
