@@ -1,0 +1,119 @@
+ol li {
+    margin-bottom: 15px;
+}
+
+ol li ol li,
+ol li ul li {
+    margin-bottom: 0px;
+}
+
+/* embedded things */
+ol.top ol {
+    list-style-type: lower-alpha;
+}
+ol.top ol ol {
+    list-style-type: lower-roman;
+}
+
+.importantBox,
+.noteBox,
+pre {
+    vertical-align: middle;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 28px;
+    background-image: none;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+}
+
+.importantBox {
+    background-color: rgb(255,233,233);
+    border: 2px dashed rgb(255,0,0);
+    background-image: url(images/important.png);
+
+}
+
+.noteBox {
+    background-color: rgb(204,217,255);
+    border: 2px dashed rgb(51,102,255);
+    background-image: url(images/note.png);
+}
+
+pre {
+    border: 1px solid rgb(128,128,128);
+    background-color: rgb(243,243,243);
+    overflow: auto;
+}
+
+/* NEW entries */
+.new {
+    background: #EEFEEE url('images/new.gif') no-repeat 3px 3px;
+    text-indent: 42px;
+    padding: 5px;
+    border: 1px solid #AABBAA;
+}
+
+.new li,
+.new div,
+.new pre {
+    /* Sub-sections of new thingy, take out indentions */
+    text-indent: 0px;
+}
+
+
+/*  BUTTONS  */
+
+.mini_button {
+    border: 1px solid #cacbcc;
+    background: #e2e4e9 url('images/backgrounds/button.gif') repeat-x center left;
+    color: #666666;
+    padding: 3px 5px 2px 5px;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 1px;
+    display: inline-block;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+
+.mini_button:hover,
+.mini_button:active {
+    border: 1px solid #a7c1dd;
+    background: #b7d5f2 url('images/backgrounds/button_hover.gif') repeat-x center left;
+    color: #3c70ac;
+    text-decoration: none;
+}
+
+/* TABLES */
+
+table {
+    background-color:#FFFFFF;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+table th {
+    background-color:#DEE7EC;
+    border:1px solid #CCCCCC;
+    padding:3px;
+}
+table td {
+    border:1px solid #CCCCCC;
+    padding:3px;
+}
+
+#container, #container_12 {
+    width: auto;
+    margin-right: 10%;
+}
+
+.broken {
+    text-decoration: line-through;
+}
+
+.broken::after {
+    content: '[broken]';
+    vertical-align: super;
+    font-size: .8em;
+}

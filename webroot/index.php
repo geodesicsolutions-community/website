@@ -29,7 +29,6 @@ function template(string $name): void {
         <br>
         <strong>Todo:</strong>
         <ul>
-            <li><strong>Wiki:</strong> Figure out why links are not parsing, they show as [[link]] instead of actually linking.</li>
             <li>Also browse the wiki, check for other broken things caused by older dokuwiki plugins.</li>
             <li>Unlock keys that will enable older versions of the software to run on any domain</li>
             <li>Full source code for latest version, open source, no encoding at all, with licensing checks removed.
@@ -38,6 +37,8 @@ function template(string $name): void {
                     <li>In future, maybe a github repo where anyone in the community can submit updates (that are reviewed).  For things like PHP8 compatibility.</li>
                 </ul>
             </li>
+            <li><strong>Wiki:</strong> Figure out why links are not parsing, they show as [[link]] instead of actually linking.</li>
+            <li>See if I can find a copy of the old changelogs in wayback or something...<!-- then update the references to it --></li>
             <li>These are just the plans, no promises as it is done as time allows.</li>
         </ul>
         <h2>Geodesic Solutions, LLC. info:</h2>
