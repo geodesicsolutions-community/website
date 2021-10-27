@@ -94,7 +94,7 @@
     </li>
 <?php } ?>
 <li>
-    <a href="/wiki/doku.php/id,tutorials;server;db_backup/"<?=$popup?>>
+    <a href="/wiki/tutorials/server/db_backup/"<?=$popup?>>
     Back up your current MySQL Database</a>.  <strong>Important Step! Do
     NOT skip!</strong>
 </li>
@@ -113,7 +113,7 @@
         <?php if ($ver != '2.0.4') { ?>
 
             <li class="new">
-                <a href="/wiki/doku.php/id,installation;download_software;start/"<?=$popup?>>
+                <a href="/wiki/installation/download_software/start/"<?=$popup?>>
                 Download 2.0.4</a> version from the client area.  The package to download will be in the <a href="#" class="broken"<?=$popup?>>Client Area</a> at:
                 <br /><br />
                 <strong>Browse To:</strong> <em><?=$oldPackageFolder?></em><br /><br />

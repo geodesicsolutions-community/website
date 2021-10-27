@@ -135,7 +135,7 @@ define ('ADMIN_LOCAL_DIR', 'new_admin_dir/');
     <li class="new">
         Starting in version 4.0.0, the <strong>User Management Page</strong> has been totally changed, and is now named <strong>My Account</strong>.
         It is now much more of a "control panel" page rather than a page just with links to different sections.
-        In order to use the new my account, you must follow <a href="/wiki/doku.php/id,tutorials;switch_to_my_account_home;start/"<?php echo $popup; ?>>these instructions</a>.
+        In order to use the new my account, you must follow <a href="/wiki/tutorials/switch_to_my_account_home/start/"<?php echo $popup; ?>>these instructions</a>.
     </li>
 <?php } ?>
 
@@ -330,7 +330,7 @@ src="security_image.php"&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt; /tr&gt;
             <?php echo $noteStart; ?>
                 <strong>Below For Reference Only:</strong> As of version 6.0.0, use of <strong>{php}</strong> no longer supported.  It will
                 still export your PHP modules as noted below, but will be commented out to prevent errors, so you will have access to them for your reference.
-                You can find alternatives to using {php} <a href="/wiki/doku.php/id,tutorials;design_adv;no_use_php/"<?php echo $popup;?>>here</a>.
+                You can find alternatives to using {php} <a href="/wiki/tutorials/design_adv/no_use_php/"<?php echo $popup;?>>here</a>.
             <?php echo '</div>'; ?>
             PHP Modules have been converted into Smarty template files, since now
             <del>you can insert PHP inside of template files directly using</del>:
@@ -513,7 +513,7 @@ $page = Singleton::getInstance('geoSite');</pre></td>
         <br /><br />
         <?php echo $noteStart; ?>
             <strong>Help with Errors:</strong>  You can find help for interpreting
-            the template error messages in the user manual <a href="/wiki/doku.php/id,designers;template_error/"<?php echo $popup; ?>>here</a>.  If that does not help,
+            the template error messages in the user manual <a href="/wiki/designers/template_error/"<?php echo $popup; ?>>here</a>.  If that does not help,
             technically, problems within custom templates are
             not covered by support.  In this case however, for problems specifically caused
             by Smarty 3.1 compatibility issues, if you are having trouble understanding
@@ -547,7 +547,7 @@ $page = Singleton::getInstance('geoSite');</pre></td>
 </li>
 <li>
     This concludes the update process. Your software should now be fully updated. Proceed to the
-    <a href="/wiki/doku.php/id,how_this_software_works;start/"<?php echo $popup; ?>>
+    <a href="/wiki/how_this_software_works/start/"<?php echo $popup; ?>>
     "How this Software Works"</a> section of the User Manual to learn how everything
     works.
     <br /><br />

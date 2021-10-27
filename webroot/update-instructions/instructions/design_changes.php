@@ -93,7 +93,7 @@
         You can find such places by in the admin, at <strong>Design &gt; Text Search</strong>,
         do a text search for <pre>{php</pre>
         For anywhere that is found, either <strong>remove</strong> the embedded PHP, or
-        replace with an alternative method.  You can find <strong>alternatives to {php}</strong> <a href="/wiki/doku.php/id,tutorials;design_adv;no_use_php"<?php echo $popup;?>>here</a>.
+        replace with an alternative method.  You can find <strong>alternatives to {php}</strong> <a href="/wiki/tutorials/design_adv/no_use_php"<?php echo $popup;?>>here</a>.
     </li>
 
 <?php } ?>
@@ -426,7 +426,7 @@ input[type="text"] {box-sizing: content-box;-moz-box-sizing: content-box;}
             more easily adjust and tweak these instructions as needed, you will find the instructions
             to convert your existing design to use RWD in the following wiki page:
             <br /><br />
-            <a href="/wiki/doku.php/id,tutorials;design_adv;convert_design_rwd/"<?php echo $popup;?>>Convert Existing Design to use RWD</a>
+            <a href="/wiki/tutorials/design_adv/convert_design_rwd/"<?php echo $popup;?>>Convert Existing Design to use RWD</a>
             <br /><br />
             We recommend to complete the rest of the update process, then you can take your time
             using the tutorial linked above as a guide to help you convert your
@@ -796,7 +796,7 @@ CODE;
 <?php if (!$tplUpdate) { ?>
 <?php
 //helper link thingy
-$systemTipLink = '<a href="/wiki/doku.php/id,tutorials;design_adv;replace_system_templates/#geo_updates_customized_templates"'.$popup.'>here</a>';
+$systemTipLink = '<a href="/wiki/tutorials/design_adv/replace_system_templates/#geo_updates_customized_templates"'.$popup.'>here</a>';
 ?>
     <li class="doYourself">
         <!-- Note: Does not get new class because this is done on anything that started with
@@ -812,11 +812,11 @@ $systemTipLink = '<a href="/wiki/doku.php/id,tutorials;design_adv;replace_system
             <?php echo $noteStart; ?>
                 Do you have a lot of templates in your system, module, or addon folders
                 in your custom template set, but don't think all of them have changes
-                in them?  If so, follow <a href="/wiki/doku.php/id,tutorials;design_adv;make_template_set_update_friendly/"<?php echo $popup;?>>these instructions</a> before continuing, to make
+                in them?  If so, follow <a href="/wiki/tutorials/design_adv/make_template_set_update_friendly/"<?php echo $popup;?>>these instructions</a> before continuing, to make
                 your template set more update friendly.  Doing this will greatly
                 reduce the amount of work you will need to do now and in future updates.
                 <br /><br />
-                Also make sure to always follow <a href="/wiki/doku.php/id,tutorials;design_adv;replace_system_templates/"<?php echo $popup;?>>this tutorial</a>
+                Also make sure to always follow <a href="/wiki/tutorials/design_adv/replace_system_templates/"<?php echo $popup;?>>this tutorial</a>
                 when you need to customize a new system or module template.
             <?php echo '</div>'; ?>
             <ol style="list-style: upper-alpha;">
@@ -824,7 +824,7 @@ $systemTipLink = '<a href="/wiki/doku.php/id,tutorials;design_adv;replace_system
                     between <?php echo $ver; ?> and the latest release.
                     <ul>
                         <?php if (!$atLeast['7.0'] && $ver!=='6.0.6') { ?>
-                            <li>Changes for versions <strong>before</strong> 7.0.0 in the user manual <a href="/wiki/doku.php/id,designers;changes_to_note/"<?php echo $popup;?>>here</a>.</li>
+                            <li>Changes for versions <strong>before</strong> 7.0.0 in the user manual <a href="/wiki/designers/changes_to_note/"<?php echo $popup;?>>here</a>.</li>
                         <?php } ?>
                         <li>Changes for versions <strong>after</strong> 7.0.0
                             in the changelogs <a href="/changelog/"<?php echo $popup;?> class="broken">here</a>.</li>

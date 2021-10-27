@@ -194,7 +194,7 @@ $smarty_31 = (!$useSetupImport&&!$tplUpdate&&!$atLeast['6.0']);
 <?php if (!$atLeast['16.03.0']) { ?>
     <?php echo $importantStart; ?>
         <strong style="color: red;">Compatibility Warning:</strong>
-        <a href="/wiki/doku.php/id,server_requirements;start/"
+        <a href="/wiki/server_requirements/start/"
             <?php echo $popup; ?>>Minimum requirements</a> have
         changed since Ver. <?php echo $ver; ?>, please ensure that your site meets
         these requirements before proceeding:

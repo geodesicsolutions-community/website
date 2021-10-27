@@ -89,7 +89,7 @@ if ($useSetupImport) {
         server does not meet the minimum requirements to run the software,
         and you are sure that Zend Optimizer is installed on your server,
         you can ignore the message (click "Ok") and continue.  Otherwise,
-        please refer to <a href="/wiki/doku.php/id,installation;wizard;troubleshoot;start/"<?php echo $popup; ?>>
+        please refer to <a href="/wiki/installation/wizard/troubleshoot/start/"<?php echo $popup; ?>>
             this troubleshooting page</a>.
     <?php echo '</div>'; ?>
     <br /><img src="images/<?php echo $whichWizard['image']; ?>6.jpg" alt="Wizard page" class="screenshot" />
