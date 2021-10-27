@@ -24,7 +24,30 @@ function template(string $name): void {
         <p>As time allows, we will work on adding to this site:</p>
         <strong>Done:</strong>
         <ul>
-            <li>Restored the wiki from a backup, updated it to latest dokuwiki version, and got it "mostly" working.  See <a href="/wiki">/wiki</a>!
+            <li>Restored the wiki from a backup, updated it to latest dokuwiki version, and got it "mostly" working.  See <a href="/wiki">/wiki</a>!</li>
+            <li>
+                Gut the licensing from the encoded files and created a patch for the latest version to work <strong>with no ioncube needed or license checks</strong>.
+                <br><br>
+                <strong>Instructions:</strong><br>
+                Download the patch: <button onclick="ga('send', 'event', 'outbound', 'click', '/patches/unencoded_unlicense_patch_18.02.0.bff354dbba748dd30c1d9a7d1ccc7dd61a1b95fc.zip', {
+                        'transport': 'beacon',
+                        'hitCallback': function(){document.location = '/patches/unencoded_unlicense_patch_18.02.0.bff354dbba748dd30c1d9a7d1ccc7dd61a1b95fc.zip';}
+                    });">download patch</button>
+                <br><br>
+                Unzip the downloaded file.
+                <br><br>
+                Before you upload any of these, if you already have the .unenc version of the files (not common), rename them so you have a backup of the old file.
+                <br><br>
+                <strong>Only use with 18.02.0 version!</strong> As time allows I'll make a thing to unlock old versions, if there is a need for it.  Let me know.
+                <br><br>
+                In the patch will be 3 files:
+                <ul>
+                    <li>products.unenc.php -> upload to /classes/php5_classes/ folder</li>
+                    <li>DataAccess.class.unenc.php -> upload to /classes/php5_classes/ folder</li>
+                    <li>updateFactory.unenc.php -> IGNORE!  Unless you are trying to update to 18.02.0, in which case,
+                        upload to /upgrade/ folder then run the upgrade script.</li>
+                </ul>
+            </li>
         </ul>
         <br>
         <strong>Todo:</strong>
