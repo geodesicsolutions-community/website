@@ -1,0 +1,2 @@
+<?php
+include 'changelogs.php';

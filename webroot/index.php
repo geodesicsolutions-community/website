@@ -22,7 +22,7 @@ function template(string $name): void {
         <p>What:  This website is a new home for the former geodesicsolutions.com community, and a place to get the latest GeoCore software download for free and unencoded.
             The website is still being set up.</p>
         <p>As time allows, we will work on adding to this site:</p>
-        <strong>Done:</strong>
+        <h2>Done:</h2>
         <ul>
             <li>Restored the wiki from a backup, updated it to latest dokuwiki version, and got it "mostly" working.  See <a href="/wiki">/wiki</a>!</li>
             <li>
@@ -51,9 +51,10 @@ function template(string $name): void {
                 I know the site is ugly, still please just link to the site.  I use analytics to figure out the level of usage, if I see very little traffic or clicks
                 on the patch file that will inform my decision of how much additional time to put into this (for free).  <strong>Thanks!</strong>
             </li>
+            <li><a href="/changelog">Legacy Changelog</a></li>
         </ul>
         <br>
-        <strong>Todo:</strong>
+        <h2>Todo:</h2>
         <ul>
             <li>Also browse the wiki, check for other broken things caused by older dokuwiki plugins.</li>
             <li>Unlock keys that will enable older versions of the software to run on any domain</li>
@@ -64,7 +65,7 @@ function template(string $name): void {
                 </ul>
             </li>
             <li><strong>Wiki:</strong> Figure out why links are not parsing, they show as [[link]] instead of actually linking.</li>
-            <li>See if I can find a copy of the old changelogs in wayback or something...<!-- then update the references to it --></li>
+            <li>Look for references to geodesicsolutions.com in the wiki and update as applicable.  (any volunteers?)</li>
             <li>These are just the plans, no promises as it is done as time allows.</li>
         </ul>
         <h2>Geodesic Solutions, LLC. info:</h2>
