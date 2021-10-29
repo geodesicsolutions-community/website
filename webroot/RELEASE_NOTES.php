@@ -1,13 +1,7 @@
-<?php
-
-
-$showAll = (isset($_GET['showAllVersions']) && $_GET['showAllVersions']) ? true : false; //whether to show all versions or not.
-
-?>
 <html>
 
 <head>
-    <title>Release Notes &amp; Change Log - Geodesic Solutions Products</title>
+    <title>Legacy Release Notes &amp; Change Log - Geodesic Solutions Products</title>
 
     <style type="text/css">
         #FogBugzReleaseNotes {
