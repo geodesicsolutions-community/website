@@ -92,7 +92,7 @@ foreach ($versions as $version => $info) {
 
 ?>
     <li>
-        <a href="http://geodesicsolutions.com/RELEASE_NOTES.php" onclick="window.open(this.href); return false;">
+        <a href="/RELEASE_NOTES.php">
             Previous Releases
         </a>
     </li>
