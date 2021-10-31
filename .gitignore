@@ -1,5 +1,6 @@
 # Apps that are sym-linked in the webroot
 webroot/wiki/
+webroot/latest/
 
 # Patch folder
 webroot/patches/
