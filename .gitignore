@@ -4,3 +4,6 @@ webroot/latest/
 
 # Patch folder
 webroot/patches/
+
+# OS Files
+**/.DS_Store
