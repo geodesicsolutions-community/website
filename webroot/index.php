@@ -1,86 +1,57 @@
 <?php
-
-// @todo Move this stuff to a bootloader if we get more files
-
-define('DIR_TEMPLATE', dirname(__DIR__) . '/templates');
-
-/**
- * Helper to easily include a template file from the templates folder
- */
-function template(string $name): void {
-    include DIR_TEMPLATE . "/$name.php";
-}
-
+require '../bootload.php';
 ?>
+<!doctype html>
 <html>
-    <head>
-        <title>Geodesic Solutions Community</title>
-        <?php template('analytics') ?>
-    </head>
-    <body>
-        <h1>Comming soon!</h1>
-        <p>What:  This website is a new home for the former geodesicsolutions.com community, and a place to get the latest GeoCore software download for free and unencoded.
-            The website is still being set up.</p>
-        <p>As time allows, we will work on adding to this site:</p>
-        <h2>Done:</h2>
-        <ul>
-            <li>Restored the wiki from a backup, updated it to latest dokuwiki version, and got it "mostly" working.  See <a href="/wiki">/wiki</a>!</li>
-            <li>
-                Gut the licensing from the encoded files and created a patch for the latest version to work <strong>with no ioncube needed or license checks</strong>.
-                <br><br>
-                <strong>Note:</strong> Provided as-is with no waranty of any kind, <strong>use at your own risk</strong>.
-                <br><br>
-                <strong>Instructions:</strong><br>
-                Download the patch: <button onclick="downloadPatch('/patches/unencoded_unlicense_patch_18.02.0.bff354dbba748dd30c1d9a7d1ccc7dd61a1b95fc.zip')">download patch</button>
-                <br><br>
-                Unzip the downloaded file.
-                <br><br>
-                Before you upload any of these, if you already have the .unenc version of the files (not common), rename them so you have a backup of the old file.
-                <br><br>
-                <strong>Only use with 18.02.0 version!</strong> As time allows I'll make a thing to unlock old versions, if there is a need for it.  Let me know.
-                <br><br>
-                In the patch will be 3 files:
-                <ul>
-                    <li>products.unenc.php -> upload to /classes/php5_classes/ folder</li>
-                    <li>DataAccess.class.unenc.php -> upload to /classes/php5_classes/ folder</li>
-                    <li>updateFactory.unenc.php -> IGNORE!  Unless you are trying to update to 18.02.0, in which case,
-                        upload to /upgrade/ folder then run the upgrade script.</li>
-                </ul>
-                <br><br>
-                <strong>Sharing Note:</strong> Please send people the link to this page instead of passing around the files or hot linking the file directly!
-                I know the site is ugly, still please just link to the site.  I use analytics to figure out the level of usage, if I see very little traffic or clicks
-                on the patch file that will inform my decision of how much additional time to put into this (for free).  <strong>Thanks!</strong>
-            </li>
-            <li><a href="/changelog">Legacy Changelog</a></li>
-        </ul>
-        <br>
-        <h2>Todo:</h2>
-        <ul>
-            <li>Also browse the wiki, check for other broken things caused by older dokuwiki plugins.</li>
-            <li>Unlock keys that will enable older versions of the software to run on any domain</li>
-            <li>Full source code for latest version, open source, no encoding at all, with licensing checks removed.
-                <ul>
-                    <li>This includes unreleased updates for a "next version" that was never officially released.  Includes: PHP 7.* fixes, update to stripe payments.</li>
-                    <li>In future, maybe a github repo where anyone in the community can submit updates (that are reviewed).  For things like PHP8 compatibility.</li>
-                </ul>
-            </li>
-            <li><strong>Wiki:</strong> Figure out why links are not parsing, they show as [[link]] instead of actually linking.</li>
-            <li>Look for references to geodesicsolutions.com in the wiki and update as applicable.  (any volunteers?)</li>
-            <li>These are just the plans, no promises as it is done as time allows.</li>
-        </ul>
-        <h2>Geodesic Solutions, LLC. info:</h2>
-        <p>The former company, <em>Geodesic Solutions, LLC.</em> is officially out of business.  It was a company that sold classifieds and auctions software called GeoCore.</p>
-        <p>The geodesicsolutions.com website domain expired in July 2021.  We were able to contact one of the 3 owners who confirmed that the company is no longer in business.</p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geodesic Solutions Community</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <?php template('analytics') ?>
+</head>
+<body>
+    <?php template('header') ?>
+    <main>
+        <div class="hero">
+            <h1 class="hero__title">Geodesic Solutions Community</h1>
+            <p class="hero__description">Community supported open source classifieds and auctions software</p>
+        </div>
 
-        <h2>geodesicsolutions.org info:</h2>
-        <p>This website is for the Geodesic community itself, now that the company is shut down.</p>
-        <p>This website is not affiliated with or run by the former <em>Geodesic Solutions, LLC.</em> company in any way.</p>
         <p>
-            In the interest of transparency:
-            This site and the source code on it are run by a former employee (known in Geo community as jonyo) who did more recent contract work for the company before it shut down.
-            As result of that contract work, he still had full access to the latest un-encoded source code, along with a backup copy of the wiki.
-            He was able to contact one of the owners to confirm that the company is indeed shut down, and as such, has permission to release the source code free and un-encoded.
+            <strong>What:</strong> This website is a new home for the former geodesicsolutions.com community, and a
+            place to get the latest GeoCore software download for free and unencoded.
+            The website is still being set up, and we welcome any volunteers that would like to help!
         </p>
-        <p>If you came here looking for domes, sorry, this is not the page you are looking for!  This is for the classified and auction software known as GeoCore.</p>
-    </body>
+        <p>As time allows, we will work on adding to this site:</p>
+        <br>
+        <h2>Todo List (help needed for any of these items):</h2>
+        <ul>
+            <li>Browse the wiki, check for other broken things caused by older dokuwiki plugins.  Things like
+                the lists plugin (no new version since 2008) and tip plugin (no new version since 2004 or something).
+            </li>
+            <li><strong>Partially complete (still in testing stages)</strong>: Full source code for latest version,
+                open source, no encoding at all, with licensing checks removed.
+                <ul>
+                    <li>This includes unreleased updates for a "next version" that was never officially released.
+                        Includes: PHP 7.* fixes, update to stripe payments.</li>
+                    <li>It uses a github repo, see the link in the header of this website!</li>
+                    <li>Help needed in the code:  See the <em>issues</em> section of the github repo.  We welcome
+                        pull requests!</li>
+                </ul>
+            </li>
+            <li>Look for references to the old geodesicsolutions.com in the wiki and update as applicable.</li>
+            <li>This website needs work!  And it is also open source, anyone can help with changes.
+                See <a href="https://github.com/geodesicsolutions-community/website">website github repo</a>
+            </li>
+        </ul>
+    </main>
+    <footer class="footer">
+        If you came here looking for domes, sorry, this is not the page you are looking for! This is for the classified
+        and auction software known as GeoCore.
+    </footer>
+</body>
+
 </html>

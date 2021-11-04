@@ -1,0 +1,135 @@
+/* css variables*/
+:root {
+    --primary-color: #432e30;
+    --primary-color-light: #8e7474;
+    --accent-color: #fe6a6b;
+    --accent-color-light: #ffe4e4;
+    --accent-color-dark: #b94b4c;
+    --white-color: #fafbfc;
+    --light-gray-color: #c6cbd1;
+    --medium-gray-color: #959da5;
+    --dark-gray-color: #444d56;
+    --bg-color: #f8f8fa;
+    --code-bg-color: #f0e8e8;
+}
+
+/* normalized */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    background-color: white;
+}
+
+p {
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+a,
+a:hover {
+    color: var(--accent-color-dark);
+}
+
+hr {
+    padding: 1rem 0;
+    border: 0;
+    border-bottom: 1px solid var(--bg-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: var(--bg-color);
+}
+
+nav a {
+    padding: .5rem 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav .active,
+nav a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 70%;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    color: white;
+}
+
+.code {
+    border-radius: 3px;
+    font-family: Space Mono, SFMono-Regular, Menlo, Monaco, Consolas,
+        Liberation Mono, Courier New, monospace;
+    background: var(--bg-color);
+    border: 1px solid var(--code-bg-color);
+    color: var(--primary-color-light);
+}
+
+.code--block {
+    white-space: pre-line;
+    padding: 0 1.5rem;
+}
+
+.code--inline {
+    padding: 3px 6px;
+    font-size: 80%;
+}
+
+.button {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+
+.button:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.container {
+    background-color: var(--bg-color);
+    border: 1px solid var(--medium-gray-color);
+    margin: .5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
