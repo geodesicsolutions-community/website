@@ -22,6 +22,7 @@ require '../bootload.php';
         <h2 id="info">Info:</h2>
         <ul>
             <li><a href="/wiki">wiki</a></li>
+            <li><a href="https://github.com/geodesicsolutions-community/geocore-community/releases">Release Changelogs</a></li>
             <li><a href="/update-instructions">Legacy "Full Upgrade Instructions"</a> - dynamic based on version
                 you are updating from.</li>
             <li><a href="/changelog">Legacy Changelog</a></li>
@@ -57,6 +58,40 @@ require '../bootload.php';
                     it to <span class="code code--inline">upgrades/</span> folder
                 </li>
             </ol>
+        </article>
+        <article class="container">
+            <strong>20.0.0 BETA 2</strong> - Full Release - Community Edition:
+            <button
+                onclick="downloadRelease('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.2/geocore-ce.zip', '20.0.0-beta.2')"
+                class="button"
+            >
+                Download 20.0.0 BETA 2
+            </button>
+            <br>
+            <br>
+            <strong>Extra Template Sets for 20.0.0 BETA 2:</strong>
+            <br>
+            <button
+                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.2/fusion.zip')"
+                class="button"
+            >
+                Download Fusion Template Set
+            </button>
+            <br>
+            <button
+                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.2/marquee.zip')"
+                class="button"
+            >
+                Download Marquee Template Set
+            </button>
+            <br>
+            <button
+                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.2/tempo.zip')"
+                class="button"
+            >
+                Download Tempo Template Set
+            </button>
+
         </article>
         <article class="container">
             Source Code:  see the <a href="https://github.com/geodesicsolutions-community/geocore-community/">
