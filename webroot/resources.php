@@ -22,6 +22,9 @@ require '../bootload.php';
         <h2 id="info">Info:</h2>
         <ul>
             <li><a href="/wiki">wiki</a></li>
+            <li>
+                <a href="https://github.com/geodesicsolutions-community/geocore-community/discussions">Community Discussion</a>
+            </li>
             <li><a href="https://github.com/geodesicsolutions-community/geocore-community/releases">Release Changelogs</a></li>
             <li><a href="/update-instructions">Legacy "Full Upgrade Instructions"</a> - dynamic based on version
                 you are updating from.</li>
