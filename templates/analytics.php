@@ -23,4 +23,28 @@
         // If nothing after a little, don't wait for it... maybe slow connection or maybe gtag blocked by browser.
         setTimeout(callback, 500)
     }
+
+    var downloadRelease = function(url, version) {
+        const callback = () => {document.location = url;};
+        gtag('event', 'click', {
+            'event_category': 'Release Download Click',
+            'event_label': url,
+            'transport_type': 'beacon',
+            'event_callback': callback
+        });
+        // If nothing after a little, don't wait for it... maybe slow connection or maybe gtag blocked by browser.
+        setTimeout(callback, 500)
+    }
+
+    var downloadTemplateSet = function(url) {
+        const callback = () => {document.location = url;};
+        gtag('event', 'click', {
+            'event_category': 'Template Download Click',
+            'event_label': url,
+            'transport_type': 'beacon',
+            'event_callback': callback
+        });
+        // If nothing after a little, don't wait for it... maybe slow connection or maybe gtag blocked by browser.
+        setTimeout(callback, 500)
+    }
 </script>
