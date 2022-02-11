@@ -139,7 +139,7 @@ define ('ADMIN_LOCAL_DIR', 'new_admin_dir/');
     </li>
 <?php } ?>
 
-<li class="doYourself">
+<li>
     If you have any 3rd party addons, check with the addon's author to see if
     there are updates available for those addons.  If so, update the addon(s),
     following any instructions provided by the 3rd party addon author.

@@ -63,9 +63,7 @@ $selected = array (
 'method' => $currentMethod,
 'tplUpdate' => $tplUpdate
 );
-$doYourself = (isset($_GET['doYourself']) && $selected['product'] && $selected['edition'] && $selected['version']);
-if (!$doYourself) {
-    //we don't show options at top if showing do yourself instructions
+
 ?>
 <form action='' method='get' id='productForm'>
     <select name="product" id="product">
@@ -79,7 +77,9 @@ if (!$doYourself) {
             <select name="edition" id="edition">
                 <option value='0'>-- Edition --</option>
                 <?php foreach ($editions as $edition) { ?>
-                    <option<?php if ($currentEdition === $edition) { ?> selected="selected"<?php } ?>><?php echo $edition; ?></option>
+                    <option
+                        <?php if ($currentEdition === $edition) : ?> selected="selected"<?php endif; ?>
+                    ><?php echo $edition; ?></option>
                 <?php } ?>
             </select>
         <?php } ?>
@@ -94,4 +94,3 @@ if (!$doYourself) {
         <?php } ?>
     <?php } ?>
 </form>
-<?php } ?>

@@ -94,33 +94,6 @@ if (!$atLeast['3.0']) {
         $useSetupImport = true;
     }
 }
-//figure out package label
-
-$oldPackageFolder = $links['my_downloads'].' &gt; Geo'.(($isClassifieds)? 'Classifieds ': 'Auctions ');
-if ($isEnt) { $oldPackageFolder .= 'Enterprise'; }
-else if ($isPremier) { $oldPackageFolder .= 'Premier'; }
-else {$oldPackageFolder .= 'Basic'; }
-
-$oldPackageFolder .= ' - Single License &gt; ';
-
-$oldPackageFolder .= 'Previous Releases &gt; 2.0.4 (Update Only)';
-
-$packageFolder = $links['my_downloads'].' &gt; GeoCore - Purchased License &gt; Current Release &gt;';
-
-$packageFolder .= (($useSetupImport)? 'New Installation': 'Update Existing Installation');
-
-$packageLabel = 'GeoCore ';
-$packageLabel .= (($useSetupImport)? 'Install' : 'Update').
-    ' - '.(($selected['method']=='wizard')? 'Executable Wizard' : 'Zip').
-    ' Package - Version '.$latestVer;
-
-//Geodesic_CA_ent_update_zipped_v{$version}.zip
-//Geodesic_CA_ent_full_install_wizard_v{$version}.exe
-$packageFilename = 'Geodesic_core';
-
-$packageFilename .= '_'.(($useSetupImport)?'full_install':'update').'_'.
-    (($selected['method']=='wizard')? 'wizard':'zipped').'_v'.$latestVer.
-    (($selected['method']=='wizard')? '.exe':'.zip');
 
 $importantStart = '<div class="importantBox">
 <span style="font-weight: bold;"> IMPORTANT: </span>';
@@ -134,63 +107,45 @@ if (($atLeast['3.0'] || $isEnt) && !$atLeast['5.0']) {
 }
 $smarty_31 = (!$useSetupImport&&!$tplUpdate&&!$atLeast['6.0']);
 
-
 ?>
-<?php if ($doYourself) { ?>
-    <?php echo $noteStart; ?>
-        The instructions below are <strong>not covered by Professional Update Service</strong>.
-        You may need to follow these instructions depending on if they apply to your
-        site or not.
-    <?php echo '</div>';?>
-    <?php if (isset($_GET['doYourself'])) { ?>
-        <script type="text/javascript">
-            //<![CDATA[
-            jQuery(document).ready(function () {
-                jQuery('ol.top').children(':not(.doYourself)').hide();
-            });
-            //]]>
-        </script>
-    <?php } ?>
-<?php } else { ?>
+<br />
+<p><strong style="cursor: help">Update Instructions:</strong><br />
+<strong>From:</strong> <?php echo $selected['product'].' '.$selected['edition'].' DB Version '.$selected['version']; ?>
+<br />
+<strong>To:</strong> <?php echo $to; ?>
+<br />
+<span id='methodText'>
+    <strong>Method: </strong> <?php echo $methods[$selected['method']]; ?> <span id='changeMethod' class="mini_button">change</span>
+</span>
+<span id='methodSelectBox' style="display: none;">
+    <select id="methodSelect">
+        <?php foreach ($methods as $key => $value) { ?>
+            <option value="<?php echo $key; ?>"<?php if ($currentMethod === $key) { ?> selected="selected"<?php } ?>>
+                <?php echo $value; ?>
+            </option>
+        <?php } ?>
+    </select>
+</span>
+
+<?php if ($tplUpdate) { ?>
     <br />
-    <p><strong style="cursor: help">Update Instructions:</strong><br />
-    <strong>From:</strong> <?php echo $selected['product'].' '.$selected['edition'].' DB Version '.$selected['version']; ?>
-    <br />
-    <strong>To:</strong> <?php echo $to; ?>
-    <br />
-    <span id='methodText'>
-        <strong>Method: </strong> <?php echo $methods[$selected['method']]; ?> <span id='changeMethod' class="mini_button">change</span>
+    <span id='tplUpdateText'>
+        <strong>Use: </strong>
+        <?php if ($selected['tplUpdate']=='export') {?>
+            Existing Custom Templates &amp; Design
+        <?php } else { ?>
+            New Default Templates &amp; Design
+        <?php } ?>
+        <span id='changeTplUpdate' class="mini_button">change</span>
     </span>
-    <span id='methodSelectBox' style="display: none;">
-        <select id="methodSelect">
-            <?php foreach ($methods as $key => $value) { ?>
-                <option value="<?php echo $key; ?>"<?php if ($currentMethod === $key) { ?> selected="selected"<?php } ?>>
-                    <?php echo $value; ?>
-                </option>
-            <?php } ?>
+    <span id='tplUpdateSelectBox' style="display: none;">
+        <select id="tplUpdateSelect">
+            <option value="export"<?php if ($selected['tplUpdate']=='export') { ?> selected="selected"<?php }?>>Keep Using Existing Templates &amp; Design</option>
+            <option value="use_default"<?php if ($selected['tplUpdate']=='use_default') { ?> selected="selected"<?php }?>>Use New Default Templates &amp; Design</option>
         </select>
     </span>
-
-    <?php if ($tplUpdate) { ?>
-        <br />
-        <span id='tplUpdateText'>
-            <strong>Use: </strong>
-            <?php if ($selected['tplUpdate']=='export') {?>
-                Existing Custom Templates &amp; Design
-            <?php } else { ?>
-                New Default Templates &amp; Design
-            <?php } ?>
-            <span id='changeTplUpdate' class="mini_button">change</span>
-        </span>
-        <span id='tplUpdateSelectBox' style="display: none;">
-            <select id="tplUpdateSelect">
-                <option value="export"<?php if ($selected['tplUpdate']=='export') { ?> selected="selected"<?php }?>>Keep Using Existing Templates &amp; Design</option>
-                <option value="use_default"<?php if ($selected['tplUpdate']=='use_default') { ?> selected="selected"<?php }?>>Use New Default Templates &amp; Design</option>
-            </select>
-        </span>
-    <?php } ?>
-    </p>
 <?php } ?>
+</p>
 
 <?php if (!$atLeast['16.03.0']) { ?>
     <?php echo $importantStart; ?>

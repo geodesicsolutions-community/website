@@ -1,7 +1,6 @@
 <li>
-    Locate the <?=$latestVer?> <?php if ($useSetupImport) {?>fresh install<?php } else { ?>update<?php } ?> package you downloaded earlier, the file should be named
-    something similar to:<br />
-    <strong><?php echo $packageFilename; ?></strong><br /><br />
+    Locate the package you downloaded earlier, the file should be named something similar to:<br />
+    <strong>geocore-ce.zip</strong><br /><br />
     If you can't find it, re-download it by following the applicable step above.
     <?php if ($useSetupImport) { ?>
         <?php echo $noteStart; ?>
@@ -20,11 +19,7 @@
     <?php } ?>
 </li>
 
-<?php if ($selected['method'] == 'wizard') { ?>
-    <?php require 'wizard.php'; ?>
-<?php } else { ?>
-    <?php require 'zipped.php'; ?>
-<?php } ?>
+<?php require 'zipped.php'; ?>
 
 <li>
     The next step in the upgrade process will take place in a browser window.

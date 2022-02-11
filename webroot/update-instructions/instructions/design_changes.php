@@ -292,7 +292,7 @@ input[type="text"] {box-sizing: content-box;-moz-box-sizing: content-box;}
         use the optimization setting <strong>Use {footer_html} to delay loading of certain javascript</strong>
         if you wish.
     </li>
-    <li class="new doYourself">
+    <li class="new">
         In the new version, there are a few features that make the software more mobile-friendly.
         To use them with an existing design will take some extra work.  Note that
         this entire step is <strong>optional</strong>, your site should work fine
@@ -492,7 +492,7 @@ amound all the template changes listed. -->
 
 
 <?php if ($atLeast['7.3']) { ?>
-    <li class="doYourself">
+    <li>
         <!-- NOTE: Does not get new class because it is done for every update
             after they get to 7.3.0
          -->
@@ -798,7 +798,7 @@ CODE;
 //helper link thingy
 $systemTipLink = '<a href="/wiki/tutorials/design_adv/replace_system_templates/#geo_updates_customized_templates"'.$popup.'>here</a>';
 ?>
-    <li class="doYourself">
+    <li>
         <!-- Note: Does not get new class because this is done on anything that started with
         template sets, so will show up in every update from now on. -->
         If you have custom <strong>system</strong>, module, or addon templates, follow the instructions
