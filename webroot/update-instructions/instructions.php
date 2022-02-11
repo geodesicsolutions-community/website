@@ -55,6 +55,7 @@ $atLeast['7.1.4'] = (version_compare($ver, '7.1.4','>='));
 $atLeast['7.3'] = (version_compare($ver, '7.3beta3','>='));
 $atLeast['16.02.0'] = (version_compare($ver, '16.02.0','>='));
 $atLeast['16.03.0'] = (version_compare($ver, '16.03.0','>='));
+$atLeast['20.0'] = (version_compare($ver, '20.0.0', '>='));
 
 //these are all the beta versions leading up to 3.0, treat them as if they are
 //at least 3.0
