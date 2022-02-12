@@ -42,6 +42,10 @@ require '../bootload.php';
             <li>
               <a href="/changelog">Legacy Changelog</a> - Up to and including v18.02.
             </li>
+
+            <li>
+                <a href="https://www.facebook.com/GeoCoreCE/">GeoCoreCE Facebook page</a> - Major announcements will be posted here. Please follow and like.
+            </li>
         </ul>
         <h2 id="software">Software:</h2>
         <article class="container">
