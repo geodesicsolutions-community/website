@@ -6,7 +6,7 @@ require '../bootload.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Downloads</title>
+    <title>GeoCoreCE: Downloads, Documentation, and Other Resources</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -16,19 +16,32 @@ require '../bootload.php';
     <?php template('header') ?>
     <main>
         <div class="hero">
-            <h1 class="hero__title">Downloads</h1>
-            <p class="hero__description">Also other things</p>
+            <h1 class="hero__title">Downloads, Documentation, and Other Resources</h1>
+            <p class="hero__description">This page includes links to software downloads, documentation and discussion forums.</p>
         </div>
         <h2 id="info">Info:</h2>
         <ul>
-            <li><a href="/wiki">wiki</a></li>
+            <li>
+                <a href="/wiki">wiki</a>
+            </li>
+
             <li>
                 <a href="https://github.com/geodesicsolutions-community/geocore-community/discussions">Community Discussion</a>
             </li>
-            <li><a href="https://github.com/geodesicsolutions-community/geocore-community/releases">Release Changelogs</a></li>
-            <li><a href="/update-instructions">Legacy "Full Upgrade Instructions"</a> - dynamic based on version
-                you are updating from.</li>
-            <li><a href="/changelog">Legacy Changelog</a></li>
+
+            <li>
+              <a href="https://github.com/geodesicsolutions-community/geocore-community/releases">Release Changelogs</a> -
+                From v20.0.0 forward.
+            </li>
+
+            <li>
+              <a href="/update-instructions">Legacy "Full Upgrade Instructions"</a> - dynamic based on version
+                you are updating from. Up to and including v18.02.
+            </li>
+
+            <li>
+              <a href="/changelog">Legacy Changelog</a> - Up to and including v18.02.
+            </li>
         </ul>
         <h2 id="software">Software:</h2>
         <article class="container">
@@ -63,7 +76,7 @@ require '../bootload.php';
             </ol>
         </article>
         <article class="container">
-            <strong>20.0.0 BETA 2</strong> - Full Release - Community Edition:
+            <strong>20.0.0 BETA 3</strong> - Full Release - Community Edition:
             <button
                 onclick="downloadRelease('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.3/geocore-ce.zip', '20.0.0-beta.2')"
                 class="button"
