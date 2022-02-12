@@ -119,13 +119,3 @@ table td {
     display: block;
     text-align: right;
 }
-
-.broken {
-    text-decoration: line-through;
-}
-
-.broken::after {
-    content: '[broken]';
-    vertical-align: super;
-    font-size: .8em;
-}

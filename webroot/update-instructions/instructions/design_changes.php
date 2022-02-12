@@ -826,12 +826,24 @@ $systemTipLink = '<a href="/wiki/tutorials/design_adv/replace_system_templates/#
                         <?php if (!$atLeast['7.0'] && $ver!=='6.0.6') { ?>
                             <li>Changes for versions <strong>before</strong> 7.0.0 in the user manual <a href="/wiki/designers/changes_to_note/"<?php echo $popup;?>>here</a>.</li>
                         <?php } ?>
-                        <li>Changes for versions <strong>after</strong> 7.0.0
-                            in the changelogs <a href="/changelog/"<?php echo $popup;?> class="broken">here</a>.</li>
+                        <li>
+                            Changes for versions <strong>from</strong> 7.0.0 to 19.02.0
+                            in the legacy changelogs <a href="/changelog/" target="_blank">here</a>.</li>
+                        <li>
+                            Changes for versions <strong>Starting at</strong> vertion 20.0.0 in the
+                            <a
+                                href="https://github.com/geodesicsolutions-community/geocore-community/releases"
+                                target="_blank"
+                            >github releases here</a>
+                        </li>
                     </ul>
                 </li>
                 <li>Go through each listed file, and if you have that file in your custom
                     template set, apply the changes as noted.
+                    <br><br>
+                    For changes after version 19.02.0, you can use github to show "all" changes between the releases
+                    you need.  Though it will include PHP changes as well, you will need to skip those and just pay
+                    attention to the changes to template files.
                 </li>
                 <li>If the changes listed look too complex to apply to
                     your customized template, or if you cannot
