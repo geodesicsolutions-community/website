@@ -32,7 +32,7 @@ if (!($selected['product'] && $selected['edition'] && $selected['version'])) {
 $ver = $selected['version'];
 
 // @todo use static file again
-$latestVer = '18.02.0';
+$latestVer = '20.0.0';
 
 $isEnt = in_array($selected['edition'], [ENT, GEOCORE, GEOCORECE]);
 $isPremier = ($selected['edition'] == PREMIER);
@@ -82,10 +82,6 @@ $atLeast['3.0'] = ($atLeast['3.0'] || in_array($ver, $beta3Versions));
 //use to make a link popup
 $popup = ' onclick="window.open(this.href); return false;"';
 
-
-$links['client_area'] = '<a class="broken">client area</a>';
-$links['my_downloads'] = '<a class="broken">My Downloads</a>';
-
 //now figure out if we're going to the "latest" or not...
 $to = $latestVer;
 $ageMessage = ' <span onclick="alert(\'Due to the age of your current version, you will first'
@@ -122,10 +118,11 @@ if (($atLeast['3.0'] || $isEnt) && !$atLeast['5.0']) {
 }
 $smarty_31 = (!$useSetupImport&&!$tplUpdate&&!$atLeast['6.0']);
 
+$editionShow = $selected['product'] === $selected['edition'] ? '' : $selected['edition'];
 ?>
 <br />
 <p><strong style="cursor: help">Update Instructions:</strong><br />
-<strong>From:</strong> <?php echo $selected['product'].' '.$selected['edition'].' DB Version '.$selected['version']; ?>
+<strong>From:</strong> <?= $selected['product'] ?> <?= $editionShow ?> DB Version <?= $selected['version'] ?>
 <br />
 <strong>To:</strong> <?php echo $to; ?>
 

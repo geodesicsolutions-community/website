@@ -108,6 +108,18 @@ table td {
     margin-right: 10%;
 }
 
+.version-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.version-eg {
+    font-size: .8em;
+    color: #777;
+    display: block;
+    text-align: right;
+}
+
 .broken {
     text-decoration: line-through;
 }

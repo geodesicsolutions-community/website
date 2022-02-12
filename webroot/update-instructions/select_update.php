@@ -15,8 +15,7 @@ $products = [
 $currentProduct = (isset($_GET['product']) && in_array($_GET['product'], $products))? $_GET['product']: 0;
 
 if (!in_array($currentProduct, [GEOCORE, GEOCORECE])) {
-    $editions = array ();
-
+    $editions = [];
     $editions[] = ENT;
     if ($currentProduct && $currentProduct != CLASSAUCTIONS) {
         $editions[] = PREMIER;
@@ -25,7 +24,6 @@ if (!in_array($currentProduct, [GEOCORE, GEOCORECE])) {
             $editions[] = BASIC;
         }
     }
-
     $currentEdition = (isset($_GET['edition']) && in_array($_GET['edition'], $editions))? $_GET['edition']: 0;
     $isCore = false;
 } else {
@@ -79,7 +77,14 @@ $selected = array (
             </select>
         <?php } ?>
         <?php if ($currentEdition) { ?>
-            <label> <strong>DB Version:</strong> <input type="text" name="version" id="version" placeholder="<?php echo $versionPlaceholder; ?>" value="<?php echo $versionDisplay; ?>" size="4" /></label>
+            <label class="version-container">
+                <strong>DB Version:</strong>
+                <input type="text" name="version" id="version" value="<?php echo $versionDisplay; ?>" size="8" required>
+                <br>
+                <span class="version-eg">
+                    e.g. <?= $versionPlaceholder ?>
+                </span>
+            </label>
             <br />
 
             <br />
