@@ -1,7 +1,6 @@
 <li>
-    Locate the <?=$latestVer?> <?php if ($useSetupImport) {?>fresh install<?php } else { ?>update<?php } ?> package you downloaded earlier, the file should be named
-    something similar to:<br />
-    <strong><?php echo $packageFilename; ?></strong><br /><br />
+    Locate the package you downloaded earlier, the file should be named something similar to:<br />
+    <strong>geocore-ce.zip</strong><br /><br />
     If you can't find it, re-download it by following the applicable step above.
     <?php if ($useSetupImport) { ?>
         <?php echo $noteStart; ?>
@@ -20,11 +19,7 @@
     <?php } ?>
 </li>
 
-<?php if ($selected['method'] == 'wizard') { ?>
-    <?php require 'wizard.php'; ?>
-<?php } else { ?>
-    <?php require 'zipped.php'; ?>
-<?php } ?>
+<?php require 'zipped.php'; ?>
 
 <li>
     The next step in the upgrade process will take place in a browser window.
@@ -119,19 +114,6 @@
     </li>
 <?php } else { ?>
     <li>
-        On the next page you will enter your license key.  Usually the key will
-        already be entered for you, but if not, copy and paste the license key
-        from the client area.
-        <?php if (!$isCore) { ?>
-            <br /><br />
-            Make sure you enter the new GeoCore license key, which you can find
-            in the client area.  Your old license key will not work with GeoCore.
-            Conversely, the GeoCore license key will not work with the older software
-            versions before 7.0.0.
-        <?php } ?>
-        <br /><img src="images/upgrade_license.png" alt="License page" class="screenshot" />
-    </li>
-    <li>
         The next screen(s) will be similar to the one below. The software will
         report your current version, as well as, the version you are upgrading to.
         Click on the "Run Listed Upgrades" button to apply the upgrade to your
@@ -181,30 +163,6 @@
     "username" and "password" as you ordinarily would and click the "Login"
     button.
 </li>
-<?php if (!$atLeast['3.0']) { ?>
-    <li class="new">
-        You will now see a screen similar to the one below.  Enter your license
-        key in the space provided and click "Enter".
-        <br /><img src="images/upgrade9.png" alt="Browser portion update page" class="screenshot" />
-        <br /><br />
-        To see what your license key is:
-        <ol type="a">
-            <li>
-            <strong>THIS PART IS OUTDATED</strong> - we will update it if/when we are able.
-                <br><br>
-                Log in to your <?php echo $links['client_area']; ?> on the Geodesic Solutions website
-                and click "View" for your order.
-                <br /><img src="images/view.gif" alt="Browser portion update page" class="screenshot" />
-            </li>
-            <li>
-                You will see a screen similar to the one below. Your License
-                Key will appear on this page. Copy and Paste that key into the
-                software's Admin Panel and click the "Enter" button.
-                <br /><img src="images/view_key.gif" alt="Browser portion update page" class="screenshot" />
-            </li>
-        </ol>
-    </li>
-<?php } ?>
 <li>
     You should now see the Main Admin Panel screen for your software.
 </li>

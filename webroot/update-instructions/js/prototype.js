@@ -3477,9 +3477,6 @@ Form.Methods = {
       Object.extend(options.parameters, params);
     }
 
-    if (form.hasAttribute('method') && !options.method)
-      options.method = form.method;
-
     return new Ajax.Request(action, options);
   }
 };

@@ -108,12 +108,14 @@ table td {
     margin-right: 10%;
 }
 
-.broken {
-    text-decoration: line-through;
+.version-container {
+    display: inline-block;
+    vertical-align: top;
 }
 
-.broken::after {
-    content: '[broken]';
-    vertical-align: super;
+.version-eg {
     font-size: .8em;
+    color: #777;
+    display: block;
+    text-align: right;
 }

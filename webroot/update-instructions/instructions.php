@@ -32,15 +32,30 @@ if (!($selected['product'] && $selected['edition'] && $selected['version'])) {
 $ver = $selected['version'];
 
 // @todo use static file again
-$latestVer = '18.02.0';
+$latestVer = '20.0.0';
 
-$isEnt = ($selected['edition'] == ENT||$selected['edition']==GEOCORE);
+$isEnt = in_array($selected['edition'], [ENT, GEOCORE, GEOCORECE]);
 $isPremier = ($selected['edition'] == PREMIER);
 $isBasic = ($selected['edition'] == BASIC);
-$isLite = ($selected['edition'] == LITE);
 
-$isClassifieds = ($selected['product'] == CLASSIFIEDS || $selected['product'] == CLASSAUCTIONS || $selected['product'] == GEOCORE);
-$isAuctions = ($selected['product'] == AUCTIONS || $selected['product'] == CLASSAUCTIONS|| $selected['product'] == GEOCORE);
+$isClassifieds = in_array(
+    $selected['product'],
+    [
+        CLASSIFIEDS,
+        CLASSAUCTIONS,
+        GEOCORE,
+        GEOCORECE,
+    ]
+);
+$isAuctions = in_array(
+    $selected['product'],
+    [
+        AUCTIONS,
+        CLASSAUCTIONS,
+        GEOCORE,
+        GEOCORECE,
+    ]
+);
 
 //Create some common comparisons that might be used more than once
 $atLeast['3.0'] = $atLeast['3.0.0'] = (version_compare($ver, '3.0.0RC1','>='));
@@ -55,6 +70,7 @@ $atLeast['7.1.4'] = (version_compare($ver, '7.1.4','>='));
 $atLeast['7.3'] = (version_compare($ver, '7.3beta3','>='));
 $atLeast['16.02.0'] = (version_compare($ver, '16.02.0','>='));
 $atLeast['16.03.0'] = (version_compare($ver, '16.03.0','>='));
+$atLeast['20.0'] = (version_compare($ver, '20.0.0', '>='));
 
 //these are all the beta versions leading up to 3.0, treat them as if they are
 //at least 3.0
@@ -62,13 +78,6 @@ $beta3Versions = array (
 '2.0.0b','2.0.1b','2.0.2b','2.0.3b','2.0.4b','2.0.6b','2.0.7b','2.0.8b','2.0.9b','2.0.10b'
 );
 $atLeast['3.0'] = ($atLeast['3.0'] || in_array($ver, $beta3Versions));
-
-//use to make a link popup
-$popup = ' onclick="window.open(this.href); return false;"';
-
-
-$links['client_area'] = '<a class="broken">client area</a>';
-$links['my_downloads'] = '<a class="broken">My Downloads</a>';
 
 //now figure out if we're going to the "latest" or not...
 $to = $latestVer;
@@ -93,33 +102,6 @@ if (!$atLeast['3.0']) {
         $useSetupImport = true;
     }
 }
-//figure out package label
-
-$oldPackageFolder = $links['my_downloads'].' &gt; Geo'.(($isClassifieds)? 'Classifieds ': 'Auctions ');
-if ($isEnt) { $oldPackageFolder .= 'Enterprise'; }
-else if ($isPremier) { $oldPackageFolder .= 'Premier'; }
-else {$oldPackageFolder .= 'Basic'; }
-
-$oldPackageFolder .= ' - Single License &gt; ';
-
-$oldPackageFolder .= 'Previous Releases &gt; 2.0.4 (Update Only)';
-
-$packageFolder = $links['my_downloads'].' &gt; GeoCore - Purchased License &gt; Current Release &gt;';
-
-$packageFolder .= (($useSetupImport)? 'New Installation': 'Update Existing Installation');
-
-$packageLabel = 'GeoCore ';
-$packageLabel .= (($useSetupImport)? 'Install' : 'Update').
-    ' - '.(($selected['method']=='wizard')? 'Executable Wizard' : 'Zip').
-    ' Package - Version '.$latestVer;
-
-//Geodesic_CA_ent_update_zipped_v{$version}.zip
-//Geodesic_CA_ent_full_install_wizard_v{$version}.exe
-$packageFilename = 'Geodesic_core';
-
-$packageFilename .= '_'.(($useSetupImport)?'full_install':'update').'_'.
-    (($selected['method']=='wizard')? 'wizard':'zipped').'_v'.$latestVer.
-    (($selected['method']=='wizard')? '.exe':'.zip');
 
 $importantStart = '<div class="importantBox">
 <span style="font-weight: bold;"> IMPORTANT: </span>';
@@ -133,69 +115,39 @@ if (($atLeast['3.0'] || $isEnt) && !$atLeast['5.0']) {
 }
 $smarty_31 = (!$useSetupImport&&!$tplUpdate&&!$atLeast['6.0']);
 
-
+$editionShow = $selected['product'] === $selected['edition'] ? '' : $selected['edition'];
 ?>
-<?php if ($doYourself) { ?>
-    <?php echo $noteStart; ?>
-        The instructions below are <strong>not covered by Professional Update Service</strong>.
-        You may need to follow these instructions depending on if they apply to your
-        site or not.
-    <?php echo '</div>';?>
-    <?php if (isset($_GET['doYourself'])) { ?>
-        <script type="text/javascript">
-            //<![CDATA[
-            jQuery(document).ready(function () {
-                jQuery('ol.top').children(':not(.doYourself)').hide();
-            });
-            //]]>
-        </script>
-    <?php } ?>
-<?php } else { ?>
+<br />
+<p><strong style="cursor: help">Update Instructions:</strong><br />
+<strong>From:</strong> <?= $selected['product'] ?> <?= $editionShow ?> DB Version <?= $selected['version'] ?>
+<br />
+<strong>To:</strong> <?php echo $to; ?>
+
+<?php if ($tplUpdate) { ?>
     <br />
-    <p><strong style="cursor: help">Update Instructions:</strong><br />
-    <strong>From:</strong> <?php echo $selected['product'].' '.$selected['edition'].' DB Version '.$selected['version']; ?>
-    <br />
-    <strong>To:</strong> <?php echo $to; ?>
-    <br />
-    <span id='methodText'>
-        <strong>Method: </strong> <?php echo $methods[$selected['method']]; ?> <span id='changeMethod' class="mini_button">change</span>
+    <span id='tplUpdateText'>
+        <strong>Use: </strong>
+        <?php if ($selected['tplUpdate']=='export') {?>
+            Existing Custom Templates &amp; Design
+        <?php } else { ?>
+            New Default Templates &amp; Design
+        <?php } ?>
+        <span id='changeTplUpdate' class="mini_button">change</span>
     </span>
-    <span id='methodSelectBox' style="display: none;">
-        <select id="methodSelect">
-            <?php foreach ($methods as $key => $value) { ?>
-                <option value="<?php echo $key; ?>"<?php if ($currentMethod === $key) { ?> selected="selected"<?php } ?>>
-                    <?php echo $value; ?>
-                </option>
-            <?php } ?>
+    <span id='tplUpdateSelectBox' style="display: none;">
+        <select id="tplUpdateSelect">
+            <option value="export"<?php if ($selected['tplUpdate']=='export') { ?> selected="selected"<?php }?>>Keep Using Existing Templates &amp; Design</option>
+            <option value="use_default"<?php if ($selected['tplUpdate']=='use_default') { ?> selected="selected"<?php }?>>Use New Default Templates &amp; Design</option>
         </select>
     </span>
-
-    <?php if ($tplUpdate) { ?>
-        <br />
-        <span id='tplUpdateText'>
-            <strong>Use: </strong>
-            <?php if ($selected['tplUpdate']=='export') {?>
-                Existing Custom Templates &amp; Design
-            <?php } else { ?>
-                New Default Templates &amp; Design
-            <?php } ?>
-            <span id='changeTplUpdate' class="mini_button">change</span>
-        </span>
-        <span id='tplUpdateSelectBox' style="display: none;">
-            <select id="tplUpdateSelect">
-                <option value="export"<?php if ($selected['tplUpdate']=='export') { ?> selected="selected"<?php }?>>Keep Using Existing Templates &amp; Design</option>
-                <option value="use_default"<?php if ($selected['tplUpdate']=='use_default') { ?> selected="selected"<?php }?>>Use New Default Templates &amp; Design</option>
-            </select>
-        </span>
-    <?php } ?>
-    </p>
 <?php } ?>
+</p>
 
 <?php if (!$atLeast['16.03.0']) { ?>
     <?php echo $importantStart; ?>
         <strong style="color: red;">Compatibility Warning:</strong>
         <a href="/wiki/server_requirements/start/"
-            <?php echo $popup; ?>>Minimum requirements</a> have
+            target="_blank">Minimum requirements</a> have
         changed since Ver. <?php echo $ver; ?>, please ensure that your site meets
         these requirements before proceeding:
         <ul>

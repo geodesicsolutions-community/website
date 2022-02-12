@@ -9,12 +9,12 @@
 define ('ENT','Enterprise');
 define ('PREMIER', 'Premier');
 define ('BASIC', 'Basic');
-define ('LITE', 'Lite');
 
 define ('CLASSIFIEDS','Geo Classifieds');
 define ('AUCTIONS', 'Geo Auctions');
 define ('CLASSAUCTIONS', 'GeoClassAuctions');
-define ('GEOCORE','GeoCore');
+define ('GEOCORE','GeoCore MAX / Classifieds / Auctions / Leased');
+define ('GEOCORECE','GeoCore CE (Community Edition)');
 
 ?>
 <!DOCTYPE html>
@@ -30,10 +30,6 @@ define ('GEOCORE','GeoCore');
 <body>
 <div class="pad">
     <h1 style="text-shadow: 2px 2px 0 #999999;">Product/Version Based Full Update Instructions</h1>
-    <p>
-        <strong>Note:</strong> Disregard portions talking about logging into the client area or needing an updated
-        license.  We may remove those parts as time allows.
-    </p>
 </div>
 <br /><br />
 <?php
