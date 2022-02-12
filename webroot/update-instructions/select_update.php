@@ -5,15 +5,16 @@
  * This is in its own folder to give it its own bound context
  */
 
-$products = array (
-GEOCORE,
-CLASSIFIEDS,
-AUCTIONS,
-CLASSAUCTIONS
-);
+$products = [
+    GEOCORECE,
+    GEOCORE,
+    CLASSIFIEDS,
+    AUCTIONS,
+    CLASSAUCTIONS,
+];
 $currentProduct = (isset($_GET['product']) && in_array($_GET['product'], $products))? $_GET['product']: 0;
 
-if ($currentProduct!= GEOCORE) {
+if (!in_array($currentProduct, [GEOCORE, GEOCORECE])) {
     $editions = array ();
 
     $editions[] = ENT;
@@ -23,15 +24,13 @@ if ($currentProduct!= GEOCORE) {
         if ($currentProduct == CLASSIFIEDS) {
             $editions[] = BASIC;
         }
-        //un-comment next line if we ever start releasing the Lite edition again
-        //$editions[] = LITE;
     }
 
     $currentEdition = (isset($_GET['edition']) && in_array($_GET['edition'], $editions))? $_GET['edition']: 0;
     $isCore = false;
 } else {
     //geocore is it's own edition
-    $currentEdition = GEOCORE;
+    $currentEdition = $currentProduct;
     $isCore = true;
 }
 $currentVersion = (isset($_GET['version']) && trim($_GET['version']))? trim($_GET['version']): 0;
@@ -44,13 +43,10 @@ if ($currentVersion) {
 }
 //make display default to 7.0.0 if they selected geocore, or 6.0.8 otherwise
 $versionPlaceholder = ($currentProduct==GEOCORE)? '7.0.0':'6.0.8';
+if ($currentProduct === GEOCORECE) {
+    $versionPlaceholder = '20.0.0';
+}
 $versionDisplay = ($currentVersion)? $currentVersion: '';
-
-$methods = array (
-    'wizard' => 'Executable Wizard',
-    'zip' => 'Manual FTP (Zipped Package)'
-);
-$currentMethod = (isset($_GET['method']) && isset($methods[$_GET['method']]))? $_GET['method']: 'wizard';
 
 $validChoices = array ('export', 'use_default');
 $tplUpdate = (isset($_GET['tplUpdate']) && in_array($_GET['tplUpdate'], $validChoices))? $_GET['tplUpdate'] : 'export';
@@ -60,7 +56,6 @@ $selected = array (
 'product' => $currentProduct,
 'edition' => $currentEdition,
 'version' => $currentVersion,
-'method' => $currentMethod,
 'tplUpdate' => $tplUpdate
 );
 
@@ -73,7 +68,7 @@ $selected = array (
         <?php } ?>
     </select>
     <?php if ($currentProduct) { ?>
-        <?php if ($currentProduct!==GEOCORE) { ?>
+        <?php if (!$isCore) { ?>
             <select name="edition" id="edition">
                 <option value='0'>-- Edition --</option>
                 <?php foreach ($editions as $edition) { ?>

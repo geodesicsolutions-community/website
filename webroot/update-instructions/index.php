@@ -9,12 +9,12 @@
 define ('ENT','Enterprise');
 define ('PREMIER', 'Premier');
 define ('BASIC', 'Basic');
-define ('LITE', 'Lite');
 
 define ('CLASSIFIEDS','Geo Classifieds');
 define ('AUCTIONS', 'Geo Auctions');
 define ('CLASSAUCTIONS', 'GeoClassAuctions');
-define ('GEOCORE','GeoCore');
+define ('GEOCORE','GeoCore MAX / Classifieds / Auctions / Leased');
+define ('GEOCORECE','GeoCore CE (Community Edition)');
 
 ?>
 <!DOCTYPE html>

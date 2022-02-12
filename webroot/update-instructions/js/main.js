@@ -51,19 +51,6 @@ Event.observe(window,'load',function () {
             $('productForm').submit();
         });
     }
-    if ($('wizard_zip')) {
-        $('wizard_zip').observe('change', function () {
-            $('productForm').submit();
-        });
-    }
-    if ($('methodText')) {
-        $('methodSelect').observe('change',function () {
-            $('method').setValue(this.getValue());
-            $('productForm').submit();
-        } );
-        $('methodText').observe('click', toggleMethod)
-            .setStyle ({cursor: 'pointer'});
-    }
 
     if ($('tplUpdateText')) {
         $('tplUpdateSelect').observe('change',function () {
@@ -109,11 +96,6 @@ function toggleTplUpdate ()
 {
     $('tplUpdateText').hide();
     $('tplUpdateSelectBox').show();
-}
-function toggleMethod ()
-{
-    $('methodText').hide();
-    $('methodSelectBox').show();
 }
 
 function toggleStylesInstructions ()

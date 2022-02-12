@@ -34,13 +34,28 @@ $ver = $selected['version'];
 // @todo use static file again
 $latestVer = '18.02.0';
 
-$isEnt = ($selected['edition'] == ENT||$selected['edition']==GEOCORE);
+$isEnt = in_array($selected['edition'], [ENT, GEOCORE, GEOCORECE]);
 $isPremier = ($selected['edition'] == PREMIER);
 $isBasic = ($selected['edition'] == BASIC);
-$isLite = ($selected['edition'] == LITE);
 
-$isClassifieds = ($selected['product'] == CLASSIFIEDS || $selected['product'] == CLASSAUCTIONS || $selected['product'] == GEOCORE);
-$isAuctions = ($selected['product'] == AUCTIONS || $selected['product'] == CLASSAUCTIONS|| $selected['product'] == GEOCORE);
+$isClassifieds = in_array(
+    $selected['product'],
+    [
+        CLASSIFIEDS,
+        CLASSAUCTIONS,
+        GEOCORE,
+        GEOCORECE,
+    ]
+);
+$isAuctions = in_array(
+    $selected['product'],
+    [
+        AUCTIONS,
+        CLASSAUCTIONS,
+        GEOCORE,
+        GEOCORECE,
+    ]
+);
 
 //Create some common comparisons that might be used more than once
 $atLeast['3.0'] = $atLeast['3.0.0'] = (version_compare($ver, '3.0.0RC1','>='));
@@ -113,19 +128,6 @@ $smarty_31 = (!$useSetupImport&&!$tplUpdate&&!$atLeast['6.0']);
 <strong>From:</strong> <?php echo $selected['product'].' '.$selected['edition'].' DB Version '.$selected['version']; ?>
 <br />
 <strong>To:</strong> <?php echo $to; ?>
-<br />
-<span id='methodText'>
-    <strong>Method: </strong> <?php echo $methods[$selected['method']]; ?> <span id='changeMethod' class="mini_button">change</span>
-</span>
-<span id='methodSelectBox' style="display: none;">
-    <select id="methodSelect">
-        <?php foreach ($methods as $key => $value) { ?>
-            <option value="<?php echo $key; ?>"<?php if ($currentMethod === $key) { ?> selected="selected"<?php } ?>>
-                <?php echo $value; ?>
-            </option>
-        <?php } ?>
-    </select>
-</span>
 
 <?php if ($tplUpdate) { ?>
     <br />
