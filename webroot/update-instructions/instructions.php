@@ -79,9 +79,6 @@ $beta3Versions = array (
 );
 $atLeast['3.0'] = ($atLeast['3.0'] || in_array($ver, $beta3Versions));
 
-//use to make a link popup
-$popup = ' onclick="window.open(this.href); return false;"';
-
 //now figure out if we're going to the "latest" or not...
 $to = $latestVer;
 $ageMessage = ' <span onclick="alert(\'Due to the age of your current version, you will first'
@@ -150,7 +147,7 @@ $editionShow = $selected['product'] === $selected['edition'] ? '' : $selected['e
     <?php echo $importantStart; ?>
         <strong style="color: red;">Compatibility Warning:</strong>
         <a href="/wiki/server_requirements/start/"
-            <?php echo $popup; ?>>Minimum requirements</a> have
+            target="_blank">Minimum requirements</a> have
         changed since Ver. <?php echo $ver; ?>, please ensure that your site meets
         these requirements before proceeding:
         <ul>

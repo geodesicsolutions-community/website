@@ -20,7 +20,7 @@
     </li>
 <?php } ?>
 <li>
-    <a href="/wiki/tutorials/server/db_backup/"<?=$popup?>>
+    <a href="/wiki/tutorials/server/db_backup/" target="_blank">
     Back up your current MySQL Database</a>.  <strong>Important Step! Do
     NOT skip!</strong>
 </li>

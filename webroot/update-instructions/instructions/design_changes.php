@@ -43,7 +43,7 @@
                         <li>
                             Using FTP, download and edit the file <strong>geo_templates/<?php echo $t_set; ?>/text.csv</strong> using software that can read and write CSV files.
                             <?php echo $noteStart; ?>
-                                We recommend <em>Libre Office's Calc</em> to open, edit, and save CSV files.  It is free to download and use, from <a href="http://www.libreoffice.org/"<?php echo $popup;?>>http://www.libreoffice.org/</a>.
+                                We recommend <em>Libre Office's Calc</em> to open, edit, and save CSV files.  It is free to download and use, from <a href="http://www.libreoffice.org/" target="_blank">http://www.libreoffice.org/</a>.
                             <?php echo '</div>'; ?>
                         </li>
                         <li>
@@ -93,7 +93,7 @@
         You can find such places by in the admin, at <strong>Design &gt; Text Search</strong>,
         do a text search for <pre>{php</pre>
         For anywhere that is found, either <strong>remove</strong> the embedded PHP, or
-        replace with an alternative method.  You can find <strong>alternatives to {php}</strong> <a href="/wiki/tutorials/design_adv/no_use_php"<?php echo $popup;?>>here</a>.
+        replace with an alternative method.  You can find <strong>alternatives to {php}</strong> <a href="/wiki/tutorials/design_adv/no_use_php" target="_blank">here</a>.
     </li>
 
 <?php } ?>
@@ -426,7 +426,7 @@ input[type="text"] {box-sizing: content-box;-moz-box-sizing: content-box;}
             more easily adjust and tweak these instructions as needed, you will find the instructions
             to convert your existing design to use RWD in the following wiki page:
             <br /><br />
-            <a href="/wiki/tutorials/design_adv/convert_design_rwd/"<?php echo $popup;?>>Convert Existing Design to use RWD</a>
+            <a href="/wiki/tutorials/design_adv/convert_design_rwd/" target="_blank">Convert Existing Design to use RWD</a>
             <br /><br />
             We recommend to complete the rest of the update process, then you can take your time
             using the tutorial linked above as a guide to help you convert your
@@ -527,7 +527,7 @@ amound all the template changes listed. -->
             <ol style="list-style: upper-alpha;">
                 <li>Go through every single template change listed for every version
                     between <?php echo $ver; ?> and the latest release
-                    <a href="/changelog/"<?php echo $popup;?>>here</a>.
+                    <a href="/changelog/" target="_blank">here</a>.
                 </li>
                 <li>Look for changes to the file <strong>external/css/default.css</strong>,
                     and for every change listed, apply that change to your own
@@ -796,7 +796,7 @@ CODE;
 <?php if (!$tplUpdate) { ?>
 <?php
 //helper link thingy
-$systemTipLink = '<a href="/wiki/tutorials/design_adv/replace_system_templates/#geo_updates_customized_templates"'.$popup.'>here</a>';
+$systemTipLink = '<a href="/wiki/tutorials/design_adv/replace_system_templates/#geo_updates_customized_templates" target="_blank">here</a>';
 ?>
     <li>
         <!-- Note: Does not get new class because this is done on anything that started with
@@ -812,11 +812,11 @@ $systemTipLink = '<a href="/wiki/tutorials/design_adv/replace_system_templates/#
             <?php echo $noteStart; ?>
                 Do you have a lot of templates in your system, module, or addon folders
                 in your custom template set, but don't think all of them have changes
-                in them?  If so, follow <a href="/wiki/tutorials/design_adv/make_template_set_update_friendly/"<?php echo $popup;?>>these instructions</a> before continuing, to make
+                in them?  If so, follow <a href="/wiki/tutorials/design_adv/make_template_set_update_friendly/" target="_blank">these instructions</a> before continuing, to make
                 your template set more update friendly.  Doing this will greatly
                 reduce the amount of work you will need to do now and in future updates.
                 <br /><br />
-                Also make sure to always follow <a href="/wiki/tutorials/design_adv/replace_system_templates/"<?php echo $popup;?>>this tutorial</a>
+                Also make sure to always follow <a href="/wiki/tutorials/design_adv/replace_system_templates/" target="_blank">this tutorial</a>
                 when you need to customize a new system or module template.
             <?php echo '</div>'; ?>
             <ol style="list-style: upper-alpha;">
@@ -824,7 +824,7 @@ $systemTipLink = '<a href="/wiki/tutorials/design_adv/replace_system_templates/#
                     between <?php echo $ver; ?> and the latest release.
                     <ul>
                         <?php if (!$atLeast['7.0'] && $ver!=='6.0.6') { ?>
-                            <li>Changes for versions <strong>before</strong> 7.0.0 in the user manual <a href="/wiki/designers/changes_to_note/"<?php echo $popup;?>>here</a>.</li>
+                            <li>Changes for versions <strong>before</strong> 7.0.0 in the user manual <a href="/wiki/designers/changes_to_note/" target="_blank">here</a>.</li>
                         <?php } ?>
                         <li>
                             Changes for versions <strong>from</strong> 7.0.0 to 19.02.0
