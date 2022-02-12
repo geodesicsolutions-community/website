@@ -23,8 +23,8 @@ define ('GEOCORECE','GeoCore CE (Community Edition)');
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/prototype.js"></script>
-    <script type="text/javascript" src="js/main.js?v=2"></script>
-    <link href="style.css?v=1" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/main.js?3"></script>
+    <link href="style.css?2" rel="stylesheet" type="text/css" />
     <title>Full Update Instructions</title>
 </head>
 <body>
