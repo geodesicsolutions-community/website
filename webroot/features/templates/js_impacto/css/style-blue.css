@@ -1,0 +1,340 @@
+/*--------- TABLE OF CONTENTS---------*/
+
+/* css/style-blue.css */
+
+/* General Background, Text and Links
+------------------------------------- */
+/* Header Colors and Size
+------------------------------------- */
+/* Leader Module
+------------------------------------- */
+/* Sidebar Modules
+------------------------------------- */
+/* Base Typography
+------------------------------------- */
+/* Base Landing Pages
+------------------------------------- */
+/* Navigation
+------------------------------------- */
+
+
+body {
+  /* Background Color */
+  /* background: #fff url(/web/20200522092241im_//templates/js_impacto/images/blue/header_bg.png) repeat-x; */
+  background: #fff none repeat-x;
+  /* Text Color */
+  color: #3a3936;
+  /* Font Style */
+  font-family: Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+
+/* @group Header */
+
+
+
+#header {
+  width: 100%;
+  /* background-image: url(/web/20200522092241im_//templates/js_impacto/images/blue/header_bg.png); */
+  background-image: none;
+}
+
+
+
+/* Header Logo - Set size in template parameters! */
+#header span#graphic a,#header h1#graphic a {
+  background-image: url(/web/20200522092241im_//templates/js_impacto/images/blue/logo.png);
+}
+
+/* Text Logo */
+#header span#text-header a,#header h1#text-header a {
+  font-size: 40px;
+  line-height: 100%;
+  color: #fff;
+  text-shadow: #000 1px 1px 1px;
+}
+
+/* Text Logo Hover */
+#header span#text-header a:hover,#header h1#text-header a:hover {
+  color: #690;
+}
+
+/* Text Slogan */
+#header span#text-slogan,#header h2#text-slogan {
+  font-size: 18px;
+  color: #4b4b4b;
+  text-shadow: #000 0 1px 1px;
+}
+
+/* @end */
+
+/* @group Leader */
+#wrap,#wrap .container_24 {
+  background: #fff transparent repeat-x center top; /* url(/web/20200522092241im_//templates/js_impacto/images/blue/teaser_bg.png) */
+}
+body.landing #wrap,body.landing #wrap .container_24 {
+  background: #fff transparent repeat-x center top; /* url(/web/20200522092241im_//templates/js_impacto/images/blue/teaser_bg.png) */
+}
+
+/*body.landing #teaser {
+  background: url(/web/20200522092241im_//templates/js_impacto/images/blue/teaser_highlight.png) no-repeat center top;
+  padding-top: 10px;
+  position: relative;
+  top: -10px;
+}*/
+
+
+
+/* @end */
+
+
+
+
+
+/* @group Modules */
+
+/* Leader 1,2,3 Module Headings */
+
+
+/* Left and Right Module Headings */
+
+.sidebar .moduletable h3,.sidebar .moduletable_menu h3, .sidebar .module h3,.sidebar .module_menu h3 {
+  border-bottom: 3px solid #c9c9c9;
+  padding: 0 0 5px 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+#footer,#footer .container_24 {
+  background: #2E2F2D url(/web/20200522092241im_//templates/js_impacto/images/blue/footer_bg.png) repeat-x center top;
+  color: #a6a6a6;
+  text-shadow: #000 1px 1px 0px;
+}
+
+
+/* Footer Module Headings */
+
+#footer h3 {
+  color: #ddd;
+  font-size: 18px;
+  text-shadow: #000 1px -1px 1px;
+  margin: 0px;
+  letter-spacing: normal;
+  line-height: 69px;
+  padding-bottom: 10px;
+}
+
+/* Copyright Text */
+
+
+
+/* @end */
+
+
+
+
+/* @group Typography */
+
+/* Links */
+
+a {
+  color: #0d70d2;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0f88ff;
+}
+#topnav a {
+  color: #528bbd;
+}
+
+
+/* Headings */
+
+/* Breadcrumbs */
+
+
+#breadcrumbs .sep {
+  background-image: url(/web/20200522092241im_//templates/js_impacto/images/blue/bread_sep.png);
+}
+
+/* Read More links */
+
+
+
+/* Side Navigation */
+
+.sidebar ul.menu li a,.sidebar ul.menu_menu li a {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #e2e2e2;
+  color: #000;
+}
+.sidebar ul.menu li a:hover,
+.sidebar ul.menu_menu li a:hover {
+  color: #e46c07;
+  text-decoration: none;
+}
+
+.sidebar ul.menu li.current a,
+.sidebar ul.menu_menu li.current a {
+  border-bottom: 0px solid #fff;
+  color: #e46c07;
+}
+
+
+
+
+/* Forms */
+
+input[type="submit"], input[type="button"],button{
+  background-color: #528bbd;
+  border: 4px solid #1653ac;
+  color: #fff;
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+}
+input[type="submit"]:hover, input[type="button"]:hover{border-color: #528bbd;}
+
+/* @end */
+
+/* @group Landing Pages */
+
+/*#teaser {
+  background: url(/web/20200522092241im_//templates/js_impacto/images/blue/teaser_highlight.png) no-repeat center top;
+}*/
+
+
+
+h2.subheading span {
+  color: #468fcf;
+}
+
+
+/* Button */
+
+div.bigbutton {
+    float: right;
+}
+
+div.bigbutton a {
+    background: transparent url('/web/20200522092241im_//templates/js_impacto/images/blue/btn_right.png') no-repeat scroll top right;
+    display: block;
+    font: normal 12px arial, sans-serif;
+    height: 66px;
+    margin: 0 10px 0px 3px;
+    padding: 0px 34px 0px 3px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: #000 0px -2px 0px;
+}
+
+div.bigbutton a span.title {
+    background: transparent url(/web/20200522092241im_//templates/js_impacto/images/blue/btn_left.png) no-repeat;
+    display: block;
+    padding: 0px 0px 0px 34px;
+    height: 66px;
+    font-size: 20px;
+    line-height: 46px;
+    font-weight: bolder;
+}
+/* @end */
+
+
+
+
+
+/* @group Navbar */
+
+
+#nav,#nav .innerwrap {
+  background: #56befa none repeat-x scroll 0 0;
+  font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#nav ul li a {
+  color: #fff;
+  text-shadow: normal;
+  padding: 0px 14px;
+}
+
+
+#nav ul li a:hover,
+#nav ul li:hover > a {
+  color: #FFF;
+  text-shadow: none;
+  background: #1872C9 none repeat-x scroll 0 0;
+}
+
+
+
+
+
+#nav .menu li li li,
+#nav .menu li li:hover,
+#nav .menu li li.sfHover,
+#nav .menu li li a:focus,
+#nav .menu li li a:hover,
+#nav .menu li li a:active {
+  background: #1872c9;
+  color: #fff;
+  text-shadow: none;
+}
+
+#nav .menu li:hover ul,
+#nav .menu li.sfHover ul {
+  background: url(/web/20200522092241im_//templates/js_impacto/images/blue/menu_footer.png) no-repeat center bottom;
+}
+
+#nav .menu li li {
+  background: url(/web/20200522092241im_//templates/js_impacto/images/blue/menu_bg_trans.png) repeat;
+}
+
+/* @end */
+
+
+
+
+#nav ul li.current,
+#nav ul li#current,
+#nav ul li.active {
+  background: #1872c9 none repeat-x scroll 0 0;
+}
+
+#nav ul li.current a,
+#nav ul li.current a:hover,
+#nav ul li#current a,
+#nav ul li#current a:hover,
+#nav ul li.active a,
+#nav ul li.active a:hover,{
+  color: #fff;
+  text-shadow: normal;
+}
+
+span.3-column-desc-text {
+   font-size: 70%;
+}
+
+/*
+     FILE ARCHIVED ON 09:22:41 May 22, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:35:58 Feb 21, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 416.029
+  exclusion.robots: 0.086
+  exclusion.robots.policy: 0.078
+  cdx.remote: 0.065
+  esindex: 0.009
+  LoadShardBlock: 365.691 (3)
+  PetaboxLoader3.datanode: 484.366 (5)
+  CDXLines.iter: 19.551 (3)
+  PetaboxLoader3.resolve: 313.62 (3)
+  load_resource: 505.15 (2)
+*/
