@@ -1,125 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<script type="text/javascript" src="../templates/js_impacto/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="../templates/js_impacto/js/superfish.js"></script>
-<script type="text/javascript" src="../templates/js_impacto/js/jquery.innerfade.js"></script>
-<script type="text/javascript">
-	//jquery play nice
-	jQuery.noConflict();
-	jQuery('document').ready(function($){
+    <script type="text/javascript" src="../templates/js_impacto/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../templates/js_impacto/js/superfish.js"></script>
+    <script type="text/javascript" src="../templates/js_impacto/js/jquery.innerfade.js"></script>
+    <script type="text/javascript">
+        //jquery play nice
+        jQuery.noConflict();
+        jQuery('document').ready(function ($) {
 
-	// superfish
-	jQuery('#nav ul.menu')
-	.find('li.current_page_item,li.current_page_parent,li.current_page_ancestor,li.current-cat,li.current-cat-parent')
-	  .addClass('current')
-	  .end()
-	  .superfish({
-	  	delay: 400,
-	});
-	// rounded images
+            // superfish
+            jQuery('#nav ul.menu')
+                .find('li.current_page_item,li.current_page_parent,li.current_page_ancestor,li.current-cat,li.current-cat-parent')
+                .addClass('current')
+                .end()
+                .superfish({
+                    delay: 400,
+                });
+            // rounded images
 
-	// fading testimonials
-	jQuery('.testimonials').innerfade({
-	animationtype: 'fade',
-	speed: 'normal',
-	timeout: 4000,
-	type: 'sequence',
-	containerheight: '3.5em'});
-});
-</script>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="debug classified ad software, debug classified ad script, debug auction software, debug auction script" />
-  <meta name="description" content="This debugging addon allows you to debug your customizations to the base code, debug your addon creation or support debug issues in the software directly on your site if you find an issue" />
+            // fading testimonials
+            jQuery('.testimonials').innerfade({
+                animationtype: 'fade',
+                speed: 'normal',
+                timeout: 4000,
+                type: 'sequence',
+                containerheight: '3.5em'
+            });
+        });
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords"
+        content="debug classified ad software, debug classified ad script, debug auction software, debug auction script" />
+    <meta name="description"
+        content="This debugging addon allows you to debug your customizations to the base code, debug your addon creation or support debug issues in the software directly on your site if you find an issue" />
 
-  <title>GeoCoreCE | Debug Message Add On</title>
+    <title>GeoCoreCE | Debug Message Add On</title>
 
-  <link rel="stylesheet" href="../templates/js_impacto/wright/css/reset.css" type="text/css" />
-  <link rel="stylesheet" href="../templates/js_impacto/wright/css/layout.css" type="text/css" />
-  <link rel="stylesheet" href="../templates/js_impacto/wright/css/typography.css" type="text/css" />
-  <link rel="stylesheet" href="../templates/js_impacto/wright/css/joomla25.css" type="text/css" />
-  <link rel="stylesheet" href="../templates/js_impacto/css/1_template.css?_=20131223" type="text/css" />
-  <link rel="stylesheet" href="../templates/js_impacto/css/2_superfish.css" type="text/css" />
-  <link rel="stylesheet" href="../templates/js_impacto/css/960_24_col.css" type="text/css" />
-  <link rel="stylesheet" href="../templates/js_impacto/css/style-blue.css" type="text/css" />
-  <script src="../js/mootools-core.js" type="text/javascript"></script>
-  <script src="../js/core.js" type="text/javascript"></script>
-  <script src="../js/caption.js" type="text/javascript"></script>
-  <script type="text/javascript">
-window.addEvent('load', function() {
-				new JCaption('img.caption');
-			});
-  </script>
+    <link rel="stylesheet" href="../templates/js_impacto/wright/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../templates/js_impacto/wright/css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="../templates/js_impacto/wright/css/typography.css" type="text/css" />
+    <link rel="stylesheet" href="../templates/js_impacto/wright/css/joomla25.css" type="text/css" />
+    <link rel="stylesheet" href="../templates/js_impacto/css/1_template.css?_=20131223" type="text/css" />
+    <link rel="stylesheet" href="../templates/js_impacto/css/2_superfish.css" type="text/css" />
+    <link rel="stylesheet" href="../templates/js_impacto/css/960_24_col.css" type="text/css" />
+    <link rel="stylesheet" href="../templates/js_impacto/css/style-blue.css" type="text/css" />
+    <script src="../js/mootools-core.js" type="text/javascript"></script>
+    <script src="../js/core.js" type="text/javascript"></script>
+    <script src="../js/caption.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.addEvent('load', function () {
+            new JCaption('img.caption');
+        });
+    </script>
 
 
 
-<link href="../templates/js_impacto/css/glyphicon.css" rel="stylesheet" type="text/css" />
+    <link href="../templates/js_impacto/css/glyphicon.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="/js/tooltip.js"></script>
+    <script type="text/javascript" src="/js/tooltip.js"></script>
 </head>
+
 <body class="is_unknown v_unknown b_arial h_centurygothic id_160 rev_208">
 
-<div id="pagewrap">
-														
-<div class="item-page">
+    <div id="pagewrap">
+
+        <div class="item-page">
 
 
-<!--DO NOT DELETE BELOW - START HERE-->
-<h2>Debug Message Display Add On</h2>
-<div class="page_separator">
-</div>
+            <!--DO NOT DELETE BELOW - START HERE-->
+            <h2>Debug Message Display Add On</h2>
+            <div class="page_separator">
+            </div>
 
-<div style="width: 935px;">
-  <div style="padding: 20px 0 0 0;">
-    <div style="float: left; width: 180px; padding: 0 10px;"><img src="../images/addon_debug2_180.jpg" width="180" height="180" /> </div>
-    <div style="float: left; width: 1px; margin: 30px 30px 0px 0px;"><img src="../images/product_divider_orange.jpg" width="1" height="100" /> </div>
-    <div style="float: left; width: 305px; padding: 10px 0 0 0;">
-      <div style="float:left;"><img src="../images/product_cart_green.png"></div>
-      <div style="text-align: left; margin-left: 25px;">
-	 <div style="position:relative; top: 0px; left: 10px;">
+            <div style="width: 935px;">
+                <div style="padding: 20px 0 0 0;">
+                    <div style="float: left; width: 180px; padding: 0 10px;"><img src="../images/addon_debug2_180.jpg"
+                            width="180" height="180" /> </div>
+                    <div style="float: left; width: 1px; margin: 30px 30px 0px 0px;"><img
+                            src="../images/product_divider_orange.jpg" width="1" height="100" /> </div>
+                    <div style="float: left; width: 305px; padding: 10px 0 0 0;">
+                        <div style="float:left;"><img src="../images/product_cart_green.png"></div>
+                        <div style="text-align: left; margin-left: 25px;">
+                            <div style="position:relative; top: 0px; left: 10px;">
 
-<!-- Special Price -->
+                                <!-- Special Price -->
 
-<span class="addon_main">Price: FREE</span>
+                                <span class="addon_main">Price: FREE</span>
 
-<!-- Special Price -->
+                                <!-- Special Price -->
 
-	   <ul class="check">
-	   <li>Installed FREE with GeoCore</li>
-	   <li>Two Click Activation</li>
-	   </ul>
-         </div>
-       </div>
-    </div>
-    <div style="float: left; width: 15px; margin: 30px 30px 0px 10px;"><img src="../images/product_divider2_orange.jpg" width="15" height="100" /> </div>
-    <div style="float: left; width: 315px; padding: 10px 0 0 0;">
-      <div style="float:left;"><img src="../images/product_info_green.png"></div>
-      <div class="addon_main" style="margin-left: 55px;">
-        Compatibility
-      </div>
-      <div style="text-align: left; margin-left: 45px;">
-        <div style="text-align: left;">
-	     <ul class="check">
-	     <li>GeoProducts v4.1.2 or later</li>
-	     <li>Windows Servers</li>
-	     <li>Unix / Linux Servers</li>
-	     </ul>
-        </div>
-      </div>
-      <div style="margin-left: 75px; padding-top: 0;"><img src="../images/logos_compat.jpg">
-      </div>
-    </div>
-    <div style="float: left; width: 1px; margin: 30px 10px 0px 10px;"><img src="../images/product_divider_orange.jpg" width="1" height="100" /> </div>
-  </div>
-</div>
+                                <ul class="check">
+                                    <li>Installed FREE with GeoCore</li>
+                                    <li>Two Click Activation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="float: left; width: 15px; margin: 30px 30px 0px 10px;"><img
+                            src="../images/product_divider2_orange.jpg" width="15" height="100" /> </div>
+                    <div style="float: left; width: 315px; padding: 10px 0 0 0;">
+                        <div style="float:left;"><img src="../images/product_info_green.png"></div>
+                        <div class="addon_main" style="margin-left: 55px;">
+                            Compatibility
+                        </div>
+                        <div style="text-align: left; margin-left: 45px;">
+                            <div style="text-align: left;">
+                                <ul class="check">
+                                    <li>GeoProducts v4.1.2 or later</li>
+                                    <li>Windows Servers</li>
+                                    <li>Unix / Linux Servers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="margin-left: 75px; padding-top: 0;"><img src="../images/logos_compat.jpg">
+                        </div>
+                    </div>
+                    <div style="float: left; width: 1px; margin: 30px 10px 0px 10px;"><img
+                            src="../images/product_divider_orange.jpg" width="1" height="100" /> </div>
+                </div>
+            </div>
 
-<div class="addon_slogan" style="clear: both; width: 930px;">Developer Tools for Troubleshooting Custom Programming...
-</div>
-<!-- START: Snippets --><!-- <p><strong>Note about 'Listings':</strong> The use of the term "listings" can refer to classifieds, classified ads, standard auctions, dutch auctions, reverse auctions, and buy now only.</p> --><!-- END: Snippets -->
-<div style="margin-bottom: 10px">
+            <div class="addon_slogan" style="clear: both; width: 930px;">Developer Tools for Troubleshooting Custom
+                Programming...
+            </div>
+            <!-- START: Snippets -->
+            <!-- <p><strong>Note about 'Listings':</strong> The use of the term "listings" can refer to classifieds, classified ads, standard auctions, dutch auctions, reverse auctions, and buy now only.</p> -->
+            <!-- END: Snippets -->
+            <div style="margin-bottom: 10px">
 
-<!-- ADD ON HIGHLIGHTS - START HERE
+                <!-- ADD ON HIGHLIGHTS - START HERE
 
    <div class="moduleS1" style="margin: 5px 20px 10px 15px; float:right; text-align: left; width: 220px;">
      <div>
@@ -148,13 +160,16 @@ window.addEvent('load', function() {
 
 ADD ON HIGHLIGHTS - END HERE-->
 
-   <div style="padding: 4px 4px 4px 15px; text-align: left; margin-right: 20px;">
-<p>
-The Debug Message Add On will display debug output in the browser for you should the need arise. This is very helpful for third party development or if your site is experiencing problems. You or our support staff will be able to see output related to the function of the software and identify corrections much faster.
-</p>
-   </div>
+                <div style="padding: 4px 4px 4px 15px; text-align: left; margin-right: 20px;">
+                    <p>
+                        The Debug Message Add On will display debug output in the browser for you should the need arise.
+                        This is very helpful for third party development or if your site is experiencing problems. You
+                        or our support staff will be able to see output related to the function of the software and
+                        identify corrections much faster.
+                    </p>
+                </div>
 
-<!-- ADD ON SNAPSHOTS - START HERE
+                <!-- ADD ON SNAPSHOTS - START HERE
 
    <div style="width: 920px; clear: both;"><h5>Snapshots</h5>
    </div>
@@ -178,20 +193,21 @@ The Debug Message Add On will display debug output in the browser for you should
 
 ADD ON SNAPSHOTS - END HERE-->
 
-</div>
+            </div>
 
-<!--DO NOT DELETE ABOVE - STOP HERE-->
-	</div>
-													</section>
-					</div>
-
-
-                  </div>
-                  <div class="clear"></div>
-			</div>
+            <!--DO NOT DELETE ABOVE - STOP HERE-->
         </div>
+        </section>
+    </div>
 
-</div>
+
+    </div>
+    <div class="clear"></div>
+    </div>
+    </div>
+
+    </div>
 
 </body>
+
 </html>
