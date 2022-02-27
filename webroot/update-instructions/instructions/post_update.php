@@ -537,11 +537,9 @@ $page = Singleton::getInstance('geoSite');</pre></td>
 <li>
     Delete the following folders and any contained files from your site:<br />
     <ul>
-        <?php if ($useSetupImport) { ?>
-            <li><strong>pre_setup/</strong></li>
-            <li><strong>setup/</strong></li>
-            <li><strong>sql/</strong></li>
-        <?php } ?>
+        <li><strong>pre_setup/</strong></li>
+        <li><strong>setup/</strong></li>
+        <li><strong>sql/</strong></li>
         <li><strong>upgrade/</strong></li>
     </ul>
 </li>
