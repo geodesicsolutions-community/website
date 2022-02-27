@@ -13,6 +13,12 @@
 <li>
     FTP the files to your site, using an FTP program.
 </li>
+<?php if (!$atLeast['20.0']): ?>
+    <li class="new">
+        Empty (delete) all the files and/or folders in the <strong>templates_c</strong> folder. Be sure to leave the
+        folder itself, but the folder must be empty.
+    </li>
+<?php endif; ?>
 <li>
     On your server, double check the file "permissions" to make sure the
     following directories <strong>and their contents</strong> are writable by the “apache user”. Consider this a
