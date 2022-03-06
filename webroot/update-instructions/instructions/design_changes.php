@@ -793,6 +793,20 @@ CODE;
         <br />
     </li>
 <?php } ?>
+<?php if (!$tplUpdate && !$atLeast['20.0']): ?>
+    <li class="new">
+        In your template set, look for the template file: <strong>main_page/browsing_sub/grid.tpl</strong> - if you
+        have this file, make a backup copy of the template.  Then edit it and make the following change:
+        <br><br>
+        <strong>Find:</strong>
+        <pre>{if count($headers.optionals) > 0}</pre>
+        <br>
+        <strong>Replace with:</strong>
+        <pre>{if $headers.optionals}</pre>
+        <br>
+        Save the file and test to make sure the "grid view" works as expected on your website when browsing categories.
+    </li>
+<?php endif; ?>
 <?php if (!$tplUpdate) { ?>
 <?php
 //helper link thingy
