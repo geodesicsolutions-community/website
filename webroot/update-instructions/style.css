@@ -48,19 +48,14 @@ pre {
 
 /* NEW entries */
 .new {
-    background: #EEFEEE url('images/new.gif') no-repeat 3px 3px;
-    text-indent: 42px;
+    background-color: #EEFEEE;
     padding: 5px;
     border: 1px solid #AABBAA;
 }
 
-.new li,
-.new div,
-.new pre {
-    /* Sub-sections of new thingy, take out indentions */
-    text-indent: 0px;
+.new::before {
+    content: url(images/new.gif);
 }
-
 
 /*  BUTTONS  */
 
