@@ -1,4 +1,4 @@
-These images are for use with the Bulk Uploader Addon.
+# These images are for use with the Bulk Uploader Addon.
 
 All sample images in this folder are free for any use, including commercial use.
 No attribution required.
