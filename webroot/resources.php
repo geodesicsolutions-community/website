@@ -80,12 +80,12 @@ require '../bootload.php';
             </ol>
         </article>
         <article class="container">
-            <strong>20.0.0 BETA 3</strong> - Full Release - Community Edition:
+            <strong>20.0.0 BETA 5</strong> - Full Release - Community Edition:
             <button
-                onclick="downloadRelease('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.3/geocore-ce.zip', '20.0.0-beta.2')"
+                onclick="downloadRelease('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.5/geocore-ce.zip', '20.0.0-beta.5')"
                 class="button"
             >
-                Download 20.0.0 BETA 3
+                Download 20.0.0 BETA 5
             </button>
             <br>
             <br>
@@ -93,24 +93,24 @@ require '../bootload.php';
             <br><br>
             <a href="/wiki/installation/zipped/start">New Installation Instructions Here</a>
             <br><br>
-            <strong>Extra Template Sets for 20.0.0 BETA 3:</strong>
+            <strong>Extra Template Sets for 20.0.0 BETA 5:</strong>
             <br>
             <button
-                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.3/fusion.zip')"
+                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.5/fusion.zip')"
                 class="button"
             >
                 Download Fusion Template Set
             </button>
             <br>
             <button
-                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.3/marquee.zip')"
+                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.5/marquee.zip')"
                 class="button"
             >
                 Download Marquee Template Set
             </button>
             <br>
             <button
-                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.3/tempo.zip')"
+                onclick="downloadTemplateSet('https://github.com/geodesicsolutions-community/geocore-community/releases/download/v20.0.0-beta.5/tempo.zip')"
                 class="button"
             >
                 Download Tempo Template Set
