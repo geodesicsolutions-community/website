@@ -40,16 +40,16 @@ require '../bootload.php';
         </p>
         <h2>Community administrator:</h2>
         <p>
-            This site and the source code on it are run by a former employee (known in Geo community as jonyo) who did
-            more recent contract work for the company before it shut down.  As result of that contract work, he still
-            had full access to the latest un-encoded source code, along with a backup copy of the wiki.  He was able to
-            contact one of the owners to confirm that the company is indeed shut down, and as such, has permission to
+            This site and the source code on it was started by a former employee (known in Geo community as jonyo) who
+            did more recent contract work for the company before it shut down.  As result of that contract work, he
+            still had full access to the latest un-encoded source code, along with a backup copy of the wiki.  He was
+            able to contact one of the owners to confirm that the company is indeed shut down, and as such, has permission to
             release the source code free and un-encoded.
         </p>
         <p>
-            While he currently runs the website, he leaves a lot of the work to volunteers.  His wish is to just
-            be one of the community, not the main person running the show.  So we re-iterate, if you would like to
-            donate your time, we have plenty to do!  :)
+            Due to lack of time and a possible conflict of interest, I am now looking for a new site administrator.
+            If anyone is interested, pleas let me know!  If there is not any interest I will be shutting down the
+            site and archiving the github repo in the upcoming months.
         </p>
     </main>
     <footer class="footer">
