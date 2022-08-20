@@ -6,7 +6,10 @@ require '../bootload.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Geodesic Solutions Community</title>
+    <title>GeoCore Classifieds &amp; Auction Software - Community Edition (CE)</title>
+    <meta name="Description" content="GeoCore CE is the Open Source edition of the commercial product.
+    The company who developed the commercial version (GeodesicSolutions, LLC) has gone out of business. They have given permission
+    for the code to become Open Source and it is currently provided under the MIT license.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="style.css">

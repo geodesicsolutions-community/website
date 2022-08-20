@@ -6,7 +6,8 @@ require '../bootload.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GeoCoreCE: Downloads, Documentation, and Other Resources</title>
+    <title>Downloads, Documentation, and Other Resources: GeoCore Classifieds &amp; Auction Software - Community Edition (CE)</title>
+    <meta name="Description" content="This page includes links to software downloads, documentation, and discussion forums for GeoCore CE.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -17,7 +18,7 @@ require '../bootload.php';
     <main>
         <div class="hero">
             <h1 class="hero__title">Downloads, Documentation, and Other Resources</h1>
-            <p class="hero__description">This page includes links to software downloads, documentation and discussion forums.</p>
+            <p class="hero__description">This page includes links to software downloads, documentation, and discussion forums.</p>
         </div>
         <h2 id="info">Info:</h2>
         <ul>

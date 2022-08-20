@@ -25,7 +25,7 @@ define ('GEOCORECE','GeoCore CE (Community Edition)');
     <script type="text/javascript" src="js/prototype.js"></script>
     <script type="text/javascript" src="js/main.js?3"></script>
     <link href="style.css?2" rel="stylesheet" type="text/css" />
-    <title>Full Update Instructions</title>
+    <title>Full Update Instructions: GeoCore Classifieds &amp; Auction Software - Community Edition (CE)</title>
 </head>
 <body>
 <div class="pad">

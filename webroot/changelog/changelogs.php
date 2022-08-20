@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Geodesic Solutions Changelogs</title>
+<title>Changelogs: GeoCore Classifieds &amp; Auction Software - Community Edition (CE)</title>
 
 <style>
     ul.nav {
