@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<base href="./">
+
+	<script type="text/javascript" src="templates/js_impacto/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="templates/js_impacto/js/superfish.js"></script>
+	<script type="text/javascript" src="templates/js_impacto/js/jquery.innerfade.js"></script>
+	<script type="text/javascript">
+		//jquery play nice
+		jQuery.noConflict();
+		jQuery('document').ready(function($) {
+
+			// superfish
+			jQuery('#nav ul.menu')
+				.find('li.current_page_item,li.current_page_parent,li.current_page_ancestor,li.current-cat,li.current-cat-parent')
+				.addClass('current')
+				.end()
+				.superfish({
+					delay: 400,
+				});
+			// rounded images
+
+			// fading testimonials
+			jQuery('.testimonials').innerfade({
+				animationtype: 'fade',
+				speed: 'normal',
+				timeout: 4000,
+				type: 'sequence',
+				containerheight: '3.5em'
+			});
+		});
+	</script>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="classified ad scripts, auction scripts, software development" />
+	<meta name="description" content="Optional add-on modules for GeoCoreCE" />
+
+	<title>GeoCoreCE | Add On Modules</title>
+
+	<link rel="stylesheet" href="templates/js_impacto/wright/css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="templates/js_impacto/wright/css/layout.css" type="text/css" />
+	<link rel="stylesheet" href="templates/js_impacto/wright/css/typography.css" type="text/css" />
+	<link rel="stylesheet" href="templates/js_impacto/wright/css/joomla25.css" type="text/css" />
+	<link rel="stylesheet" href="templates/js_impacto/css/1_template.css?_=20131223" type="text/css" />
+	<link rel="stylesheet" href="templates/js_impacto/css/2_superfish.css" type="text/css" />
+	<link rel="stylesheet" href="templates/js_impacto/css/960_24_col.css" type="text/css" />
+	<link rel="stylesheet" href="templates/js_impacto/css/style-blue.css" type="text/css" />
+	<script src="js/mootools-core.js" type="text/javascript"></script>
+	<script src="js/core.js" type="text/javascript"></script>
+	<script src="js/caption.js" type="text/javascript"></script>
+	<script src="js/mootools-more.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.addEvent('load', function() {
+			new JCaption('img.caption');
+		});
+		window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), {
+				maxTitleChars: 50,
+				fixed: false
+			});
+		});
+	</script>
+
+	<link href="templates/js_impacto/css/glyphicon.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="js/tooltip.js"></script>
+</head>
+
+<body class="is_mozilla v_5 b_arial h_centurygothic id_160 rev_208">
+
+	<div id="pagewrap">
+
+		<div id="wrap">
+			<div id="container" class="container_12">
+				<div class="mid_w_wide">
+					<div id="content">
+						<section class="grid_12">
+
+							<div id="system-message-container">
+							</div>
+							<div class="item-page">
+								<h1>GeoCoreCE Add-on Modules</h1>
+
+								<a name="Top"></a>
+								<div class="page_separator"></div>
+
+								<div style="margin: 10px;">
+
+
+			<div class="items-row cols-2 row-0">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/384-account-balance-add-on.html">
+							Account Balance Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_acct_bal_180.jpg" width="100" height="100" border="0" /> </div>The Account Balance Add On will equip your GeoCoreCE web site with account balance billing. This Add On will
+					allow you to offer some users or all of them the ability to maintain an account balance with your site.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/77-anonymous-listing.html">
+							Anonymous Listing Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_anonymous_180.jpg" width="100" height="100" border="0" /> </div>This Add On allows sellers to place classified ads and/or auctions without having to go through a
+					registration process. The process is similar to what is available with many free sites like <strong>Craigslist, Kijiji, and Gumtree.</strong>
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+
+			<div class="items-row cols-2 row-1">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/67-attention-getters.html">
+							Attention Getters Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_attn_getter_180.jpg" width="100" height="100" border="0" /> </div>
+					<div class="highlight">Income Earning Feature</div><br />This Add On offers you the ability to generate additional income through your site by charging sellers a premium to have an "attention getter" image displayed next to their classified
+					ad, auction, or directory listing.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/60-bulk-uploader.html">
+							Bulk Uploader Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_bulk_uploader_180.jpg" width="100" height="100" /> </div>The Bulk Uploader Add On allows you, as the site administrator, to upload mass quantities of classified or
+					auction listings for your users.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+
+			<div class="items-row cols-2 row-2">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/260-contact-us-formaddon.html">
+							Contact Us Form Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_contact_form_180.jpg" width="100" height="100" border="0" alt="classified software and auction software contact form functionality" /> </div>This Add On offers your
+					web site visitors the ability to securely submit questions/feedback to you directly regarding your classifieds or auctions site. It is integrated with the Security Image Add On and professional in appearance and function.
+
+					<div class="item-separator"></div>
+				</div>
+
+                <div class="item column-2">
+					<h2>
+						<a href="free-add-ons/75-listing-export.html">
+							Listing Export Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_listing_export_180.jpg" width="100" height="100" border="0" /> </div>The Listing Export Add On offers you the ability to search and export classifieds, auctions , and/or
+					listings into csv or xml format. The output can be used by other applications such as those used for print media production.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+
+			<div class="items-row cols-2 row-3">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/73-debug-logging.html">
+							Debug Logging Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_debug_180.jpg" width="100" height="100" border="0" /> </div>The Debug Logging Add On will log debug output for your site, which is helpful for third party development
+					or if your classified ad and/or auctions site is experiencing problems.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/71-debug-message-display.html">
+							Debug Message Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_debug2_180.jpg" width="100" height="100" border="0" /> </div>The Debug Message Add On will display debug output in the browser for you should the need arise to
+					support your classifieds and auctions web site. Similar to the Debug Logging Add On, it is useful for third party development and troubleshooting issues.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-4">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/69-discount-codes.html">
+							Discount Codes Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_discount_codes_180.jpg" width="100" height="100" border="0" /> </div>The Discount Codes Add On gives you the opportunity to offer a discount for the areas that you
+					charge a fee. Offer as many discount codes as you like for classifieds, auctions, subscriptions, etc...
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/382-enterprise-pricing-add-on.html">
+							Enterprise Pricing Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_adv_pricing_180.jpg" width="100" height="100" border="0" /> </div>The Enterprise Pricing Add On will take your GeoCoreCE to new money making heights. This Add On will
+					expand the pricing flexibility of GeoCoreCE offering you many many new ways to earn money.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-5">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/72-example-addon.html">
+							Example Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_example_180.jpg" width="100" height="100" border="0" /> </div>The Example Add On is the skeletal framework of an Add On with no specific function. The Example Add On
+					is commonly used as a template for code modifications and/or developing your own Add On.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/385-featured-level-add-on.html">
+							Featured Level Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0; height: 120px;"><img src="images/addon_featured_180.jpg" width="100" height="100" border="0" /> </div>
+					<div class="highlight">Income Earning Feature</div><br />The Featured Level Add On will power your GeoCoreCE web site with additional revenue. This Add On will allow you to spread out featured displays around your website and charge for each.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-6">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/64-forum-bridge.html">
+							Forum Bridge Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_forum_180.jpg" width="100" height="100" border="0" /> </div>The Forum Bridge Add On is a product integration tool that allows you to operate one or more GeoCoreCE
+					installations while sharing the users with either vBulletin or Phorum forum board software.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/63-geoproducts-bridge.html">
+							GeoCoreCE Bridge Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_bridge_geo_180.jpg" width="100" height="100" border="0" /> </div>The GeoProducts Bridge Add On is a product integration tool that allows you to operate multiple
+					installations of our products separately while sharing the users between the installations.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-7">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/76-geographic-navigation.html">
+							Geographic Navigation Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_geo_navigation_180.jpg" width="100" height="100" border="0" /> </div>The Geographic Navigation Add On offers similar browsing that is found on popular free classified
+					ads websites like <strong>OLX, Craigslist, Gumtree and Kijiji.</strong>
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/78-google-maps.html">
+							Google Maps Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_google_180.jpg" width="100" height="100" border="0" /> </div>The Google Maps On offers you the ability to display detailed mapping information using the Google Map
+					API on the listing(classifieds, auctions, etc...) details page.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-8">
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-10">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/214-main-email-sender.html">
+							Main E-Mail Sender Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_email_sender_180.jpg" width="100" height="100" border="0" /> </div>The Main E-Mail Sender Add On provides the software with its email functionality. It utilizes the
+					Swift library and is capable of utilizing, Sendmail, SMTP, or PHP mail() function to send emails.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/356-mobile-api-add-on.html">
+							Mobile API Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_geo_mobile_180.jpg" width="100" height="100" border="0" /> </div>The Mobile API Add On offers you the ability to let your customers browse your site's classifieds and
+					auctions using a mobile application that can be downloaded to the user's smart phone.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-11">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/61-multi-admin.html">
+							Multi-Admin Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_multi_admin_180.jpg" width="100" height="100" border="0" /> </div>The Multi-Admin Add On gives you the ability to create additional Admin Users and allow them to have
+					permission-based access to the areas of your software's Admin Control Panel that you specify.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/79-pedigrees.html">
+							Pedigree Tree Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_pedigree_180.jpg" width="100" height="100" border="0" /> </div>The Pedigree Tree Add On offers you the ability to collect pedigree information and display it in a common
+					format within any of your classified ads, directory listings, or auctions.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-12">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/70-security-image.html">
+							Security Image Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_security_image_180.jpg" width="100" height="100" border="0" /> </div>The Security Image Add On offers added security to the forms submitted through your site. A
+					Security Image will display at the bottom of each form for your visitors to verify each time they submit a form.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/66-seo.html">
+							SEO Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_seo_180.jpg" width="100" height="100" border="0" /> </div>The SEO Add On offers you the ability to deploy your site with Search Engine Friendly URL's for increased
+					page indexing. The Add On installs easily into GeoCoreCE and uses Apache mod_rewrite for url re-writing.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-13">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/299-sharing-add-on.html">
+							Sharing Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_share_180.jpg" width="100" height="100" border="0" /> </div>The Sharing Add On offers your visitors and sellers alike the ability to share links to your site's listings
+					with Social Networking sites and Craigslist.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/68-signs-flyers.html">
+							Signs &amp; Flyers Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_signs_flyers_180.jpg" width="100" height="100" border="0" /> </div>With the Signs & Flyers Addon your customers will have the ability to easily print a sign and/or
+					flyer through a dynamically generated form for each active classified ad, directory listing, or auction placed on your site.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-14">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/340-social-connect-addon.html">
+							Social Connect Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_social_conn_180.jpg" width="100" height="100" border="0" /> </div>The Social Connect Addon allows your users to both Register, and Log In, using Facebook. Other popular
+					social websites will be coming soon.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/59-storefront.html">
+							Storefront Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_storefront_180.jpg" width="100" height="100" border="0" /> </div>
+					<div class="highlight">Income Earning Feature</div><br />The Storefront Add On offers each seller who has a Storefront subscription an interactive set of pages built directly into your site. This gives the seller the opportunity to
+					highlight their listings.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-15">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/383-subscriptions-add-on.html">
+							Subscriptions Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_subs_180.jpg" width="100" height="100" border="0" /> </div>
+					<div class="highlight">Income Earning Feature</div><br />The Subscription Add On will power your GeoCoreCE web site with subscription billing. This Add On will allow you to generate recurring revenue through subscription based access.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/341-tokens-add-on.html">
+							Tokens Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 10px 5px 5px 0;"><img src="images/addon_tokens_180.jpg" width="100" height="100" border="0" /> </div>
+					<div class="highlight">Income Earning Feature</div><br />"Tokens" can be used by customers to remove the basic cost of the listing. You can issue them to customers for free or charge for future usage on your site. You can even set up token
+					“bundles” that the user can purchase from you.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+			</div>
+			<div class="items-row cols-2 row-16">
+				<div class="item column-1">
+					<h2>
+						<a href="free-add-ons/284-twitter-feed-add-on.html">
+							Twitter Feed Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_twitter_feed_180.jpg" width="100" height="100" border="0" /> </div>The Twitter Feed Add On allows your users to place a Twitter Feed directly on their Listing Display
+					Page. The feed shows all of their latest tweets.
+
+					<div class="item-separator"></div>
+				</div>
+				<div class="item column-2">
+					<h2>
+						<a href="free-add-ons/62-zip-postal-code.html">
+							Zip/Postal Code Add On</a>
+					</h2>
+
+
+					<div style="float: left; padding: 0 5px 5px 0;"><img src="images/addon_zip_search_180.jpg" width="100" height="100" border="0" /></div>The Zip / Postal Code Search Add On is a versatile search tool that allows your customers to process
+					dynamic zip (postal) code searches in your GeoCoreCE classifieds, auctions, or directory listings web site.
+
+					<div class="item-separator"></div>
+				</div>
+				<span class="row-separator"></span>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    </div>
+
+</div>
+
+<div id="footer">
+    <div class="container_12">
+    </div>
+</div>
+
+</body>
+
+</html>

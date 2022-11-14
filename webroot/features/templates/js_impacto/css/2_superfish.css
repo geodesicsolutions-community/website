@@ -1,0 +1,193 @@
+#nav {height: 46px;margin: 0 auto;z-index: 2000;font-size: 15px;position:relative;}
+#nav ul,#nav ul li {list-style: none;float: left;line-height: 46px;}
+#nav ul {margin: 0;padding: 0;}
+#nav ul li {margin: 0;position: relative;}
+
+#nav .menu ul {position:absolute;top:-999em;}
+
+#nav .menu li:hover {
+  visibility:    inherit; /* fixes IE7 'sticky bug' */
+}
+#nav .menu li {
+  float: left;
+  position: relative;
+}
+#nav .menu a {
+  display:    block;
+  position:    relative;
+}
+#nav .menu li:hover ul,
+#nav .menu li.sfHover ul {
+  left:0;
+  top:46px;
+  width: 200px;
+  padding-bottom: 5px;
+}
+
+#nav ul li.current li a,
+#nav ul li.current li a:hover,
+#nav .menu li li:hover ul,
+#nav .menu li li.sfHover ul {
+  background-image: none;
+  padding-bottom: 0px;
+}
+
+#nav ul.menu li:hover li ul,
+#nav ul.menu li.sfHover li ul {
+  top:-999em;
+}
+#nav ul.menu li li:hover ul,
+#nav ul.menu li li.sfHover ul {
+  left:200px;
+  top:0;
+}
+#nav ul.menu li li:hover li ul,
+#nav ul.menu li li.sfHover li ul {
+  top:-999em;
+}
+#nav ul.menu li li li:hover ul,
+#nav ul.menu li li li.sfHover ul {
+  left:200px;
+  top:0;
+}
+#nav .menu {
+  float:  left;
+  width: 100%;
+}
+#nav .menu a {
+  text-decoration:none;
+}
+#nav .menu li a {
+  height: 46px;
+}
+#nav .menu li li a,
+#nav .menu li li a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+  text-shadow: none;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 28px;
+  height: 28px;
+}
+#nav ul.menu ul {background-image: none;margin: 0;padding: 0;}
+#nav .menu li li {line-height: 28px;width: 200px;}
+#nav .menu li li a,#nav .menu li:hover li a {background-image: none;}
+#nav .menu li li:hover, #nav .menu li li.sfHover,#nav .menu li li a:focus, #nav .menu li li a:hover, #nav .menu li li a:active {outline:0;}
+
+/* @override http://demotemplates.joomlashack.com/impacto2.5/templates/js_impacto/css/2_superfish.css */
+
+#nav {height: 46px;margin: 0 auto;z-index: 2000;font-size: 15px;position:relative;}
+#nav ul,#nav ul li {list-style: none;float: left;line-height: 46px;}
+#nav ul {margin: 0;padding: 0;}
+#nav ul li {margin: 0;position: relative;}
+
+#nav .menu ul {position:absolute;top:-999em;}
+
+#nav .menu li:hover {
+  visibility:    inherit; /* fixes IE7 'sticky bug' */
+}
+#nav .menu li {
+  float:      left;
+  position:    relative;
+}
+#nav .menu a {
+  display:    block;
+  position:    relative;
+}
+#nav .menu li:hover ul,
+#nav .menu li.sfHover ul {
+  left:0;
+  top:46px;
+  width: 200px;
+  padding-bottom: 5px;
+}
+
+#nav ul li.current li a,
+#nav ul li.current li a:hover,
+#nav .menu li li:hover ul,
+#nav .menu li li.sfHover ul {
+  background-image: none;
+  padding-bottom: 0px;
+}
+
+#nav ul.menu li:hover li ul,
+#nav ul.menu li.sfHover li ul {
+  top:-999em;
+}
+#nav ul.menu li li:hover ul,
+#nav ul.menu li li.sfHover ul {
+  left:200px;
+  top:0;
+}
+#nav ul.menu li li:hover li ul,
+#nav ul.menu li li.sfHover li ul {
+  top:-999em;
+}
+#nav ul.menu li li li:hover ul,
+#nav ul.menu li li li.sfHover ul {
+  left:200px;
+  top:0;
+}
+#nav .menu {
+  float:  left;
+  width: 100%;
+}
+#nav .menu a {
+  text-decoration:none;
+}
+#nav .menu li a {
+  height: 46px;
+}
+#nav .menu li li a,
+#nav .menu li li a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+  text-shadow: none;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 28px;
+  height: 28px;
+}
+#nav ul.menu ul {background-image: none;margin: 0;padding: 0;}
+#nav .menu li li {line-height: 28px;width: 200px;}
+#nav .menu li li a,#nav .menu li:hover li a {background-image: none;}
+#nav .menu li li:hover, #nav .menu li li.sfHover,#nav .menu li li a:focus, #nav .menu li li a:hover, #nav .menu li li a:active {outline:0;}
+
+#nav ul li.current ul li a,
+#nav ul li.current ul li a:hover,
+#nav ul li#current ul li a,
+#nav ul li#current ul li a:hover {
+color: #fff;
+text-shadow: none;
+}
+/*
+ul#footer_menu {
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 15px;
+}
+
+ul#footer_menu li {
+  list-style: none;
+  display: inline;
+  background: none;
+}
+*/
+/*
+     FILE ARCHIVED ON 05:42:28 May 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:35:46 Feb 21, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 133.794
+  exclusion.robots: 0.076
+  exclusion.robots.policy: 0.069
+  RedisCDXSource: 3.789
+  esindex: 0.008
+  LoadShardBlock: 110.326 (3)
+  PetaboxLoader3.datanode: 217.427 (5)
+  CDXLines.iter: 17.324 (3)
+  load_resource: 310.635 (2)
+  PetaboxLoader3.resolve: 169.348 (2)
+*/
